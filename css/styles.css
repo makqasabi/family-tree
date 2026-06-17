@@ -150,19 +150,28 @@ button:focus-visible {
   border-color: var(--gold);
 }
 
-button.primary {
+button.primary,
+a.primary {
   background: linear-gradient(180deg, var(--gold) 0%, var(--gold-deep) 100%);
   color: #fff;
-  border-color: var(--gold-deep);
+  border: 1px solid var(--gold-deep);
   font-weight: 600;
   box-shadow: 0 1px 2px rgba(80, 50, 20, 0.15), 0 4px 8px rgba(80, 50, 20, 0.10);
 }
-button.primary:hover {
+a.primary {
+  padding: 10px 16px;
+  border-radius: var(--r-md);
+  text-decoration: none;
+  font-size: 1em;
+}
+button.primary:hover,
+a.primary:hover {
   background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 100%);
   color: #fff;
   border-color: var(--gold);
 }
-button.primary:active {
+button.primary:active,
+a.primary:active {
   background: var(--gold-deep);
 }
 

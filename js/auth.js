@@ -1,5 +1,8 @@
 // Password gate + initial setup wizard.
 // States:
+//  - "intro":  first-time visitor with no local data -> show "request access"
+//              screen with a WhatsApp button to contact the admin. Acks via
+//              localStorage so the family member doesn't see it again.
 //  - "locked": stored blob exists -> ask password to unlock
 //  - "setup":  no stored blob -> offer (a) load seed.json + set password
 //                                    (b) import existing encrypted file
@@ -14,6 +17,10 @@ import {
 const gate = document.getElementById("gate");
 const slot = document.getElementById("gate-content");
 const app = document.getElementById("app");
+
+// Admin contact (WhatsApp) for first-time access requests.
+const ADMIN_WHATSAPP = "966541981022";  // عبدالمحسن أحمد القصبي
+const ACCESS_ACK_KEY = "qassabi_access_ack_v1";
 
 let onUnlocked = null;
 let activePassword = null;
@@ -30,6 +37,56 @@ export async function init(callback) {
     if (hosted) saveBlob(hosted);
   }
 
+  // First visit on this device AND no acknowledgment yet → show intro.
+  const hasAck = !!localStorage.getItem(ACCESS_ACK_KEY);
+  if (!hasAck) { renderIntro(); return; }
+
+  if (hasLocalBlob()) renderLocked();
+  else renderSetup();
+}
+
+function renderIntro() {
+  slot.innerHTML = `
+    <h2>هذا الموقع خاص بعائلة القصبي</h2>
+    <p class="muted">
+      يرجى التواصل مع المسؤول للحصول على كلمة المرور قبل الدخول.
+      اضغط الزر أدناه لإرسال رسالة واتساب مباشرة.
+    </p>
+    <label>اسمك الكامل (سيُضاف للرسالة):</label>
+    <input id="intro-name" type="text" placeholder="مثلاً: عبدالعزيز ماجد القصبي" autofocus />
+    <div class="actions" style="justify-content: stretch; flex-direction: column; gap: 8px;">
+      <a id="wa-btn" class="primary" style="display:inline-block; text-align:center; text-decoration:none;" target="_blank" rel="noopener">
+        📲 طلب كلمة المرور عبر واتساب
+      </a>
+      <button id="have-pw-btn" class="ghost">عندي كلمة المرور — متابعة</button>
+    </div>
+    <p class="muted" style="margin-top:14px; font-size:0.85em;">
+      المسؤول: عبدالمحسن أحمد القصبي
+    </p>
+  `;
+  const nameInput = slot.querySelector("#intro-name");
+  const waBtn = slot.querySelector("#wa-btn");
+  const update = () => {
+    const name = (nameInput.value || "").trim();
+    const greeting = name
+      ? `السلام عليكم، أنا ${name} وأرغب بالحصول على كلمة مرور موقع شجرة عائلة القصبي`
+      : "السلام عليكم، أرغب بالحصول على كلمة مرور موقع شجرة عائلة القصبي";
+    waBtn.href = `https://wa.me/${ADMIN_WHATSAPP}?text=${encodeURIComponent(greeting)}`;
+  };
+  update();
+  nameInput.addEventListener("input", update);
+  // Clicking the WhatsApp button is also implicit "I'm proceeding" — set the ack.
+  waBtn.addEventListener("click", () => {
+    localStorage.setItem(ACCESS_ACK_KEY, "1");
+    setTimeout(proceedAfterIntro, 800);
+  });
+  slot.querySelector("#have-pw-btn").addEventListener("click", () => {
+    localStorage.setItem(ACCESS_ACK_KEY, "1");
+    proceedAfterIntro();
+  });
+}
+
+function proceedAfterIntro() {
   if (hasLocalBlob()) renderLocked();
   else renderSetup();
 }
