@@ -2,6 +2,7 @@
 
 import { init as initAuth, lock, getPassword } from "./auth.js";
 import { setData, getData, subscribe, searchPeople, getPerson, isCurrentUserAdmin, setShowAllFemaleDOB } from "./data.js";
+import { isAdminVerified, elevate, unelevate, onAdminChange } from "./admin.js";
 import { persistEncrypted, downloadEncrypted, getStoredBlob, readFileAsJSON, saveBlob, fetchSeed, mergeSeedNarrative } from "./storage.js";
 import * as Outline from "./outline-view.js";
 import * as Tree from "./tree-view.js";
@@ -26,7 +27,11 @@ const els = {
   toast: document.getElementById("toast"),
   adminFemaleDobWrap: document.getElementById("admin-female-dob-wrap"),
   adminFemaleDob: document.getElementById("admin-female-dob"),
-  cleanupBtn: document.getElementById("cleanup-btn")
+  cleanupBtn: document.getElementById("cleanup-btn"),
+  addPersonBtn: document.getElementById("add-person-btn"),
+  mergeSeedBtn: document.getElementById("merge-seed-btn"),
+  importBtn: document.getElementById("import-btn"),
+  adminModeBtn: document.getElementById("admin-mode-btn")
 };
 
 const ADMIN_PREF_KEY = "qassabi_admin_show_female_dob_v1";
@@ -47,6 +52,7 @@ function onUnlocked(data) {
     unsubscribeData = subscribe(() => { dirty = true; updateBadge(); applyAdminVisibility(); });
 
     applyAdminVisibility();
+    onAdminChange(() => { applyAdminVisibility(); renderCurrent(); });
     showView("outline");
     renderCurrent();
 
@@ -71,14 +77,27 @@ function onUnlocked(data) {
 
 // Show/hide admin-only controls and restore the saved toggle preference.
 function applyAdminVisibility() {
-  const isAdmin = isCurrentUserAdmin();
+  // Admin features require BOTH: currentUserId is in adminUserIds AND the
+  // session has been explicitly elevated via the admin password (admin.js).
+  // Viewers see the data read-only with female DOB always hidden.
+  const isAdmin = isCurrentUserAdmin() && isAdminVerified();
   els.adminFemaleDobWrap.hidden = !isAdmin;
   els.cleanupBtn.hidden = !isAdmin;
+  els.addPersonBtn.hidden = !isAdmin;
+  els.mergeSeedBtn.hidden = !isAdmin;
+  els.importBtn.hidden = !isAdmin;
+  // The 🔓/🔐 icon reflects current state — open lock = viewer, closed = admin.
+  if (els.adminModeBtn) {
+    els.adminModeBtn.textContent = isAdmin ? "🔐" : "🔓";
+    els.adminModeBtn.title = isAdmin ? "خروج من وضع المسؤول" : "دخول وضع المسؤول";
+    els.adminModeBtn.classList.toggle("admin-on", isAdmin);
+  }
   if (isAdmin) {
     const saved = localStorage.getItem(ADMIN_PREF_KEY) === "1";
     els.adminFemaleDob.checked = saved;
     setShowAllFemaleDOB(saved);
   } else {
+    els.adminFemaleDob.checked = false;
     setShowAllFemaleDOB(false);
   }
 }
@@ -92,6 +111,7 @@ function bindHeader() {
     });
   });
   document.getElementById("add-person-btn").addEventListener("click", () => {
+    if (!isAdminVerified()) return;
     PersonForm.open({ onSave: (id) => {
       toast("تمت الإضافة");
       autoPersist();
@@ -99,11 +119,25 @@ function bindHeader() {
     }});
   });
   els.cleanupBtn.addEventListener("click", () => {
-    if (!isCurrentUserAdmin()) return;
+    if (!isCurrentUserAdmin() || !isAdminVerified()) return;
     Cleanup.open({
       afterDelete: async () => { await autoPersist(); renderCurrent(); },
       onClose: () => { renderCurrent(); }
     });
+  });
+  els.adminModeBtn?.addEventListener("click", async () => {
+    if (isAdminVerified()) {
+      if (confirm("هل تريد الخروج من وضع المسؤول؟")) {
+        unelevate();
+        toast("تم الخروج من وضع المسؤول");
+      }
+    } else {
+      const pw = prompt("أدخل كلمة مرور المسؤول:");
+      if (!pw) return;
+      const ok = await elevate(pw);
+      if (ok) toast("✓ تم تفعيل وضع المسؤول");
+      else toast("كلمة المرور غير صحيحة");
+    }
   });
   document.getElementById("pdf-btn").addEventListener("click", () => {
     toast("جارِ تجهيز الملخص...");
@@ -122,6 +156,7 @@ function bindHeader() {
     renderCurrent();
   });
   document.getElementById("merge-seed-btn").addEventListener("click", async () => {
+    if (!isAdminVerified()) return;
     if (!confirm("سيتم جلب التحديثات النصّية من seed.json (الأحداث، المهن، الأماكن، الملاحظات الفارغة) ودمجها في بياناتك دون المساس بالأبناء/الأزواج/الأعلام التي أضفتها. متابعة؟")) return;
     try {
       const seed = await fetchSeed();

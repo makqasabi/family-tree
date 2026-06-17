@@ -4,8 +4,9 @@
 import {
   getPerson, allChildrenOf, spousesOf, siblingsOf, milkRelationsOf,
   lineageString, lifespan, fullDate, isBirthHidden, deletePerson, getData,
-  getInheritedTribalRoot
+  getInheritedTribalRoot, isCurrentUserAdmin
 } from "./data.js";
+import { isAdminVerified } from "./admin.js";
 
 let onSelectCb = null;
 let onEditCb = null;
@@ -27,12 +28,13 @@ export function render(container, id, options = {}) {
   const milks = milkRelationsOf(id);
   const isCurrent = getData().currentUserId === id;
 
+  const canEdit = isCurrentUserAdmin() && isAdminVerified();
   container.innerHTML = `
     <div class="profile">
       <div class="header-actions">
-        ${onEditCb ? `<button id="pf-edit">تعديل</button>` : ""}
+        ${onEditCb && canEdit ? `<button id="pf-edit">تعديل</button>` : ""}
         <button id="pf-mark-self" class="ghost">${isCurrent ? "✓ هذا أنا" : "تعيين كأنا"}</button>
-        <button id="pf-delete" class="danger ghost">حذف</button>
+        ${canEdit ? `<button id="pf-delete" class="danger ghost">حذف</button>` : ""}
       </div>
       <h2>${escapeHTML(p.fullName)}${p.isPlaceholder ? ` <span class="meta" style="color:var(--placeholder); font-size:0.7em;">— ${p.gender === "female" ? "غير موثّقة" : "غير موثّق"}</span>` : ""}</h2>
       <div class="lineage">${escapeHTML(lineageString(id))}</div>

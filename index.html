@@ -38,12 +38,13 @@
           <input type="checkbox" id="admin-female-dob" />
           <span>إظهار تواريخ النساء</span>
         </label>
-        <button id="add-person-btn">+ إضافة شخص</button>
+        <button id="add-person-btn" hidden>+ إضافة شخص</button>
         <button id="cleanup-btn" class="ghost" title="تنظيف التكرارات (للمشرف فقط)" hidden>🧹</button>
+        <button id="merge-seed-btn" class="ghost" title="دمج التحديثات من seed.json" hidden>🔄</button>
         <button id="pdf-btn" class="ghost" title="تصدير ملخص PDF">📄</button>
-        <button id="merge-seed-btn" class="ghost" title="دمج التحديثات من seed.json (لا يحذف بياناتك)">🔄</button>
         <button id="export-btn" class="ghost" title="تصدير نسخة مشفّرة">⇩</button>
-        <button id="import-btn" class="ghost" title="استيراد نسخة مشفّرة">⇧</button>
+        <button id="import-btn" class="ghost" title="استيراد نسخة مشفّرة" hidden>⇧</button>
+        <button id="admin-mode-btn" class="ghost" title="وضع المسؤول">🔓</button>
         <button id="lock-btn" class="ghost" title="قفل">🔒</button>
       </div>
     </header>
