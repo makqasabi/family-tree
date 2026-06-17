@@ -1,0 +1,4171 @@
+{
+  "_comment": "بيانات شجرة عائلة عثمان بن عبدالله بن عبدالعزيز القصبي. كل شخص له معرّف فريد. الأب والأم يُربطان عبر fatherId/motherId. الزواج يُسجَّل في marriages. الرضاعة في milkRelations. الأشخاص الخارجيون (من عوائل الأزواج/الزوجات) موسومون بـ external=true ويبدأون كـ placeholder قابل للتوسيع لاحقًا.",
+  "version": 1,
+  "rootIds": ["p_abdulaziz_qassabi"],
+  "_seedRemovals": {
+    "_comment": "قائمة بالعناصر التي يجب إزالتها من بيانات المستخدم عند الدمج (لتنظيف الأحداث/الأشخاص/الزيجات القديمة المُستبدَلة بنسخ أحدث).",
+    "events": [
+      { "personId": "p_tariq_1951", "year": 1968, "label": "غادر الزبير (تقريبًا)" },
+      { "personId": "p_tariq_1951", "year": 1974, "label": "تخرّج وأقام في مكة (التخرّج ١٩٧٣-١٩٧٤م)" },
+      { "personId": "p_yusuf_1945", "year": 1982, "label": "رجع إلى السعودية (تقريبًا)" },
+      { "personId": "p_yusuf_1945", "year": 1972, "label": "درس في جامعة تكساس بإل باسو (UTEP)" }
+    ],
+    "persons": [
+      { "id": "p_abdulrahman_abalkhail", "reason": "اسم الزوج الصحيح \"أيمن\" وليس \"عبدالرحمن\" — أُعيد إنشاؤه تحت معرّف صحيح p_aymen_abalkhail." },
+      { "id": "p_yusuf_bader_alhamdan", "reason": "تكرار — الأصل p_yusuf_bader_2009." },
+      { "id": "p_salma_bader_alhamdan", "reason": "تكرار — الأصل p_salma_bader_2015." },
+      { "id": "p_suleiman_bader_alhamdan", "reason": "تكرار — الأصل p_suleiman_bader_2020." },
+      { "id": "p_abdulaziz_bader_alhamdan", "reason": "تكرار — الأصل p_abdulaziz_bader_2021." }
+    ],
+    "marriages": [
+      { "id": "m_muna__naif_ghamdi", "reason": "id قديم بمحتوى خاطئ (كان يربط مي بأحمد ظهران). أُعيد ربط الزواج تحت id جديد m_muna__ahmed_zahran بين منى وأحمد." },
+      { "id": "m_mai__ibn_albassam", "reason": "id قديم — كان يربط مي بابن البسام خطأً. الزواج الفعلي بين منى وعبدالقادر البسام (id جديد: m_muna__abdulqader_bassam)." }
+    ]
+  },
+  "currentUserId": "p_abdulmuhsin_ahmed_1991",
+  "adminUserIds": ["p_abdulmuhsin_ahmed_1991"],
+  "people": {
+    "p_mohammed_qassabi_patriarch": {
+      "fullName": "محمد القصبي",
+      "given": "محمد",
+      "family": "القصبي",
+      "gender": "male",
+      "tribe": "الجحادر القحاطين",
+      "tribalRootId": "p_qasim_alasem_qahatin",
+      "fatherId": null,
+      "motherId": null,
+      "isPlaceholder": true,
+      "notes": "والد عبدالعزيز القصبي الجد الأكبر للشجرة. يرجع نسبه إلى القاسم آل عاصم من الجحادر القحاطين عبر أجيال وسيطة غير موثّقة."
+    },
+    "p_abdulaziz_qassabi": {
+      "fullName": "عبدالعزيز محمد القصبي",
+      "given": "عبدالعزيز",
+      "family": "القصبي",
+      "gender": "male",
+      "tribe": "الجحادر القحاطين",
+      "tribalRootId": "p_qasim_alasem_qahatin",
+      "fatherId": "p_mohammed_qassabi_patriarch",
+      "motherId": null,
+      "isPlaceholder": true,
+      "notes": "الجد الأكبر الموثّق لعائلة القصبي. أبوه محمد القصبي. يرجع نسب القصبي إلى القاسم آل عاصم من الجحادر القحاطين عبر أجيال وسيطة غير موثّقة بعد. تنتمي زوجة طارق منال القاسم إلى نفس الأصل القبلي."
+    },
+
+    "p_qasim_alasem_qahatin": {
+      "fullName": "القاسم آل علي آل عاصم",
+      "given": "القاسم",
+      "family": "آل علي آل عاصم",
+      "tribe": "الجحادر من القحاطين",
+      "gender": "male",
+      "fatherId": null,
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "isTribalAncestor": true,
+      "notes": "الجدّ القبلي. يرجع نسب القصبي إلى القاسم آل علي آل عاصم من الجحادر من القحاطين عبر أجيال وسيطة غير موثّقة. كذلك تنحدر منه منيرة عبدالله القاسم آل عاصم زوجة طارق عثمان القصبي. هو مرجع النسب القبلي المشترك."
+    },
+    "p_abdullah_abdulaziz_qassabi": {
+      "fullName": "عبدالله عبدالعزيز القصبي",
+      "given": "عبدالله",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_qassabi",
+      "motherId": null,
+      "places": ["الزبير"],
+      "notes": "الابن الأصغر لعبدالعزيز القصبي. أخوه الأكبر عثمان (الكبير) الذي ينحدر منه فرع آخر من العائلة. تزوج موضي الحمدان (من سبيع، عمة حمدان أبو يوسف الحمدان زوج عمتي أسماء)."
+    },
+
+    "p_uthman_elder_qassabi": {
+      "fullName": "عثمان عبدالعزيز القصبي (الكبير)",
+      "given": "عثمان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_qassabi",
+      "motherId": null,
+      "isPlaceholder": true,
+      "alias": "عثمان الكبير",
+      "notes": "الابن الأكبر لعبدالعزيز القصبي. أخوه الأصغر عبدالله (والد عثمان ١٨٩٨ وجد الشجرة الرئيسية الموثّقة هنا). ينحدر من عثمان الكبير فرع مستقل من القصبي — حلقات الوسط غير موثّقة بعد. منى محمد القصبي (زوجة خالد عثمان ١٩٥٧) من نسله، أي أن خالد ومنى يلتقيان في الجدّ عبدالعزيز القصبي."
+    },
+    "p_mohammed_uthmanelder_descendant": {
+      "fullName": "محمد القصبي (من نسل عثمان الكبير)",
+      "given": "محمد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": null,
+      "motherId": null,
+      "isPlaceholder": true,
+      "notes": "والد منى القصبي (زوجة خالد عثمان ١٩٥٧). ينحدر من عثمان عبدالعزيز القصبي (الكبير) — أخي عبدالله عبدالعزيز جدّ الشجرة الرئيسية — عبر عدة أجيال غير موثّقة بعد. لذلك يُسجَّل بدون fatherId مباشر في الشجرة (الحلقات بينه وبين عثمان الكبير لم تُحدَّد)."
+    },
+    "p_muna_mohammed_qassabi": {
+      "fullName": "منى محمد القصبي",
+      "given": "منى",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_mohammed_uthmanelder_descendant",
+      "motherId": null,
+      "isPlaceholder": false,
+      "notes": "زوجة خالد عثمان عبدالله القصبي (١٩٥٧). أم سجى وعثمان ودانة ومثنى وبدر وسلطان. تنحدر من فرع عثمان عبدالعزيز القصبي الكبير (أخي جدّ الشجرة الرئيسية)، فهي وخالد يلتقيان في الجدّ عبدالعزيز القصبي."
+    },
+    "p_uthman_1898": {
+      "fullName": "عثمان عبدالله عبدالعزيز القصبي",
+      "given": "عثمان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_abdulaziz_qassabi",
+      "motherId": "p_moudi_alhamdan",
+      "birth": { "year": 1894, "approximate": true, "approxRange": [1894, 1895], "place": "الزبير" },
+      "death": { "year": 1974 },
+      "places": ["الزبير", "البحرين", "دارين", "الرياض"],
+      "occupations": ["تجارة في البحرين (في صغره)", "خبير صنف في الحنطة"],
+      "events": [
+        { "year": 1971, "label": "قَدِم إلى الرياض" }
+      ],
+      "notes": "ولد في الزبير حوالي ١٨٩٤م (يُرجَّح هذا التاريخ على التقدير الأقدم ١٨٩٨م). عمل بالبحرين تجارةً في صغره ثم هرب لقلة الدخل وسكن عند عائلة أبو عايشة في شبه جزيرة دارين. عمل كـ\"خبير صنف\" في الحنطة. قَدِمَ الرياض عام ١٩٧١م وتُوفي ١٩٧٤م. له أخت وحيدة من أمه: نورة بنت محمد البلالي (والدتهما المشتركة موضي الحمدان)."
+    },
+    "p_moudi_alhamdan": {
+      "fullName": "موضي الحمدان",
+      "given": "موضي",
+      "family": "الحمدان",
+      "tribe": "النواصر من بني تميم (الدخيّل)",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبدالله بن عبدالعزيز القصبي ووالدة عثمان عبدالله القصبي (١٨٩٤). تزوّجت كذلك من محمد البلالي وأنجبت منه نورة بنت محمد البلالي (الأخت الوحيدة لعثمان من أمه). عمة حمدان والد يوسف الحمدان (زوج أسماء عثمان القصبي). أخت ناصر الحمدان. عائلة الحمدان من الداخلة، يرجعون إلى بني تميم. (الإشارة الأولى \"من سبيع\" في الرواية الشفهية صُحِّحت بحسب كتاب العائلة.)"
+    },
+    "p_mohammed_albalali": {
+      "fullName": "محمد البلالي",
+      "given": "محمد",
+      "family": "البلالي",
+      "tribe": "دهامشة من عنزة",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج آخر لموضي الحمدان (والدة عثمان عبدالله القصبي)، وأبو نورة بنت محمد البلالي — الأخت الوحيدة لعثمان من أمه."
+    },
+    "p_noura_mohammed_albalali": {
+      "fullName": "نورة محمد البلالي",
+      "given": "نورة",
+      "family": "البلالي",
+      "tribe": "دهامشة من عنزة",
+      "gender": "female",
+      "fatherId": "p_mohammed_albalali",
+      "motherId": "p_moudi_alhamdan",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "الأخت الوحيدة لعثمان عبدالله القصبي من أمه موضي الحمدان. أبوها محمد البلالي."
+    },
+    "p_noura_almuhaidib": {
+      "fullName": "نورة عبدالمحسن بن عبدالله بن إبراهيم السلطان المهيدب",
+      "given": "نورة",
+      "family": "المهيدب",
+      "tribe": "بني تميم (؟)",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "الزوجة الأولى لعثمان عبدالله القصبي."
+    },
+    "p_noura_alraqraq_1930": {
+      "fullName": "نورة سعد الرقراق الشايع",
+      "given": "نورة",
+      "family": "الرقراق الشايع",
+      "tribe": "بني تميم",
+      "gender": "female",
+      "fatherId": "p_saad_alraqraq",
+      "motherId": "p_munira_alushayri",
+      "birth": { "year": 1930, "place": "الزبير" },
+      "places": ["الزبير", "الرياض"],
+      "events": [
+        { "year": 1971, "label": "قَدِمت إلى الرياض" }
+      ],
+      "notes": "الزوجة الثانية لعثمان عبدالله القصبي. قَدِمت الرياض ١٩٧١م. إخوتها: حسين (الأكبر)، شيخة، لولوة، محمد، عبدالعزيز. (كلهم متوفون إلا محمد، وهو والد سعود الرقراق زوج موضي يوسف وهديل الرقراق زوجة صالح يوسف.)",
+      "external": false
+    },
+    "p_saad_alraqraq": {
+      "fullName": "سعد الرقراق الشايع",
+      "given": "سعد",
+      "family": "الرقراق الشايع",
+      "tribe": "بني تميم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد نورة الرقراق."
+    },
+    "p_munira_alushayri": {
+      "fullName": "منيرة عبدالله العشري",
+      "given": "منيرة",
+      "family": "العشري",
+      "kunya": "أم حسين",
+      "gender": "female",
+      "fatherId": "p_abdullah_alashri",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة سعد الرقراق ووالدة نورة سعد الرقراق. تُكنّى أم حسين. والدها عبدالله العشري. أخواتها: زهية العشري (أم دباس، زوجة زامل المسفر) ونورة العشري (أم إبراهيم الريس). أخوها الوحيد عبدالرحمن العشري."
+    },
+    "p_abdullah_alashri": {
+      "fullName": "عبدالله العشري",
+      "given": "عبدالله",
+      "family": "العشري",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد منيرة العشري (أم حسين، زوجة سعد الرقراق) وأختيها زهية ونورة وأخيها عبدالرحمن. جدّ نورة الرقراق لأمها."
+    },
+    "p_zahia_alashri": {
+      "fullName": "زهية عبدالله العشري",
+      "given": "زهية",
+      "family": "العشري",
+      "kunya": "أم دباس",
+      "gender": "female",
+      "fatherId": "p_abdullah_alashri",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "خالة نورة الرقراق، أخت منيرة العشري. زوجها زامل المسفر."
+    },
+    "p_zamel_almusfer": {
+      "fullName": "زامل المسفر",
+      "given": "زامل",
+      "family": "المسفر",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج زهية العشري (أم دباس)."
+    },
+    "p_dabbas_almusfer": {
+      "fullName": "دباس زامل المسفر",
+      "given": "دباس",
+      "family": "المسفر",
+      "gender": "male",
+      "fatherId": "p_zamel_almusfer",
+      "motherId": "p_zahia_alashri",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "ابن زهية العشري وزامل المسفر — تكنّت أمه باسمه (أم دباس)."
+    },
+    "p_noura_alashri": {
+      "fullName": "نورة عبدالله العشري",
+      "given": "نورة",
+      "family": "العشري",
+      "kunya": "أم إبراهيم",
+      "gender": "female",
+      "fatherId": "p_abdullah_alashri",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "خالة نورة الرقراق، أخت منيرة العشري. تزوجت من رجل من عائلة الريس وأنجبت إبراهيم — تكنّت باسمه (أم إبراهيم الريس)."
+    },
+    "p_unknown_alreis": {
+      "fullName": "(غير موثّق) الريس",
+      "given": "(غير موثّق)",
+      "family": "الريس",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج نورة العشري (أم إبراهيم) ووالد إبراهيم الريس. اسمه الأول لم يُذكر في كتاب العائلة."
+    },
+    "p_ibrahim_alreis": {
+      "fullName": "إبراهيم الريس",
+      "given": "إبراهيم",
+      "family": "الريس",
+      "gender": "male",
+      "fatherId": "p_unknown_alreis",
+      "motherId": "p_noura_alashri",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "ابن نورة العشري (أم إبراهيم) — تكنّت أمه باسمه."
+    },
+    "p_abdulrahman_alashri": {
+      "fullName": "عبدالرحمن عبدالله العشري",
+      "given": "عبدالرحمن",
+      "family": "العشري",
+      "gender": "male",
+      "fatherId": "p_abdullah_alashri",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "خال نورة الرقراق الوحيد، أخو منيرة العشري."
+    },
+    "p_hussein_alraqraq": {
+      "fullName": "حسين سعد الرقراق الشايع",
+      "given": "حسين",
+      "family": "الرقراق الشايع",
+      "tribe": "بني تميم",
+      "gender": "male",
+      "fatherId": "p_saad_alraqraq",
+      "motherId": "p_munira_alushayri",
+      "isPlaceholder": true,
+      "isDeceased": true,
+      "notes": "الأخ الأكبر لنورة الرقراق."
+    },
+    "p_sheikha_alraqraq": {
+      "fullName": "شيخة سعد الرقراق الشايع",
+      "given": "شيخة",
+      "family": "الرقراق الشايع",
+      "gender": "female",
+      "fatherId": "p_saad_alraqraq",
+      "motherId": "p_munira_alushayri",
+      "birth": { "year": 1936, "approximate": true },
+      "death": { "year": 2026, "month": 2, "day": 21 },
+      "isPlaceholder": true,
+      "isDeceased": true,
+      "notes": "خالة الكاتب."
+    },
+    "p_lulu_alraqraq": {
+      "fullName": "لولوة سعد الرقراق الشايع",
+      "given": "لولوة",
+      "family": "الرقراق الشايع",
+      "gender": "female",
+      "fatherId": "p_saad_alraqraq",
+      "motherId": "p_munira_alushayri",
+      "death": { "year": 2024, "month": 8, "day": 1 },
+      "isPlaceholder": true,
+      "isDeceased": true,
+      "notes": "(المعرّف \"p_lulu_alraqraq\" قديم — الاسم الصحيح \"لولوة\" لا \"لولو\".)"
+    },
+    "p_mohammed_alraqraq": {
+      "fullName": "محمد سعد الرقراق الشايع",
+      "given": "محمد",
+      "family": "الرقراق الشايع",
+      "gender": "male",
+      "fatherId": "p_saad_alraqraq",
+      "motherId": "p_munira_alushayri",
+      "isPlaceholder": false,
+      "notes": "أخو نورة الرقراق (جدتي الكبرى زوجة عثمان ١٨٩٨). على قيد الحياة. أبو سعود وهديل — سعود تزوّج موضي يوسف القصبي، وهديل تزوّجت صالح يوسف القصبي، فيلتقي فرع يوسف القصبي بفرع نورة الرقراق عبر هذين الزواجين."
+    },
+    "p_abdulaziz_alraqraq": {
+      "fullName": "عبدالعزيز سعد الرقراق الشايع",
+      "given": "عبدالعزيز",
+      "family": "الرقراق الشايع",
+      "gender": "male",
+      "fatherId": "p_saad_alraqraq",
+      "motherId": "p_munira_alushayri",
+      "death": { "year": 2024, "month": 12, "day": 16 },
+      "isPlaceholder": true,
+      "isDeceased": true
+    },
+
+    "p_abdullah_1922": {
+      "fullName": "عبدالله عثمان عبدالله القصبي",
+      "given": "عبدالله",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1920 },
+      "death": { "year": 2014 },
+      "events": [
+        { "year": 1952, "label": "رَجَع من مصر وألقى كلمة في مكة (مدير المعارف وقتها محمد بن مانع)" },
+        { "year": 1953, "label": "أول مسيِّر رواتب لوزارة المواصلات (صفر ١٣٧٣هـ)" }
+      ],
+      "notes": "رجع من مصر ١٩٥٢م ثم ألقى كلمة في مكة. مدير المعارف وقتها محمد بن مانع. سكن عند عبدالرزاق الريّس. أعطاه أبو عثمان جاسم القصبي بِشتًا ليواجه به الناس. عمل مع طلال بن عبدالعزيز في وزارة المواصلات. في صفر ١٣٧٣هـ كان أول مسيِّر رواتب من وزارة المواصلات."
+    },
+    "p_qumasha_albalali": {
+      "fullName": "قماشة البلالي",
+      "given": "قماشة",
+      "family": "البلالي",
+      "tribe": "دهامشة من عنزة",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "إحدى زوجتي عبدالله عثمان القصبي. عائلة البلالي من دهامشة من عنزة. (الإشارة الأولى \"بني سالم من حرب\" صُحِّحت بحسب ملاحظات العائلة.)"
+    },
+    "p_mushira_kassab": {
+      "fullName": "مشيرة كسّاب",
+      "given": "مشيرة",
+      "family": "كسّاب",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "إحدى زوجتي عبدالله عثمان القصبي."
+    },
+
+    "p_mohammed_1940": {
+      "fullName": "محمد عثمان عبدالله القصبي",
+      "given": "محمد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1940 },
+      "death": { "year": 2023 }
+    },
+    "p_khawla_alanqari": {
+      "fullName": "خولة الفقيه العنقري",
+      "given": "خولة",
+      "family": "الفقيه العنقري",
+      "tribe": "عناقر من سدير",
+      "fatherId": "p_alfaqih_alanqari_patriarch",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة محمد عثمان القصبي. أختها خالد الفقيه (والد أحمد زوج هالة أحمد القصبي) — أي أن خولة عمة أحمد الفقيه."
+    },
+    "p_alfaqih_alanqari_patriarch": {
+      "fullName": "والد خولة وخالد الفقيه العنقري",
+      "family": "الفقيه العنقري",
+      "tribe": "عناقر من سدير",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "الأب المشترك لـ خولة الفقيه العنقري (زوجة محمد عثمان القصبي) وخالد الفقيه (والد أحمد زوج هالة أحمد القصبي). أي أن خولة عمة أحمد الفقيه. اسمه الأول غير موثّق."
+    },
+
+    "p_yusuf_1945": {
+      "fullName": "يوسف عثمان عبدالله القصبي",
+      "given": "يوسف",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1945, "month": 6, "day": 11, "note": "في قائمة أخرى: ١٩٤٦م" },
+      "places": ["الزبير", "إنديانا", "إل باسو، تكساس", "الرياض"],
+      "events": [
+        { "year": 1962, "label": "سافر إلى أمريكا (إنديانا)" },
+        { "year": 1972, "label": "درس في جامعة تكساس بإل باسو (UTEP) وعاد إلى السعودية" }
+      ],
+      "notes": "سافر إلى أمريكا ١٩٦٢م. درس في إنديانا ثم في جامعة تكساس بإل باسو، وعاد إلى السعودية عام ١٩٧٢م."
+    },
+    "p_nawal_alrushud": {
+      "fullName": "نوال عبدالمحسن الرشود",
+      "given": "نوال",
+      "family": "الرشود",
+      "tribe": "السبيعي",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة يوسف عثمان القصبي."
+    },
+
+    "p_hind_1948": {
+      "fullName": "هند عبدالله عثمان القصبي",
+      "given": "هند",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdullah_1922",
+      "motherId": "p_qumasha_albalali",
+      "birth": { "year": 1948 },
+      "notes": "بنت عبدالله ١٩٢٢ من زوجته الأولى قماشة البلالي (يُرجَّح بناءً على عمرها)."
+    },
+    "p_khalid_albalali": {
+      "fullName": "خالد عبداللطيف البلالي",
+      "given": "خالد",
+      "family": "البلالي",
+      "tribe": "دهامشة من عنزة",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج هند عبدالله القصبي. عائلة البلالي من دهامشة من عنزة."
+    },
+
+    "p_asma_1949": {
+      "fullName": "أسماء عثمان عبدالله القصبي",
+      "given": "أسماء",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1949, "month": 4, "day": 29 }
+    },
+    "p_yusuf_alhamdan": {
+      "fullName": "يوسف حمدان ناصر الحمدان",
+      "given": "يوسف",
+      "family": "الحمدان",
+      "tribe": "النواصر من بني تميم (الدخيّل)",
+      "fatherId": "p_hamdan_naser_alhamdan",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج أسماء عثمان القصبي. والده حمدان بن ناصر الحمدان. جده ناصر الحمدان هو أخو موضي الحمدان (زوجة عبدالله بن عبدالعزيز القصبي) — أي أن يوسف وأسماء يلتقيان في النسب من جهة جده ناصر وجدتها موضي. عائلة الحمدان من الداخلة، يرجعون إلى بني تميم."
+    },
+    "p_hamdan_naser_alhamdan": {
+      "fullName": "حمدان ناصر الحمدان",
+      "given": "حمدان",
+      "family": "الحمدان",
+      "tribe": "بني تميم",
+      "fatherId": "p_naser_alhamdan",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد يوسف الحمدان زوج أسماء، وابن أخ موضي الحمدان (الجدة الكبرى زوجة عبدالله بن عبدالعزيز)."
+    },
+    "p_naser_alhamdan": {
+      "fullName": "ناصر الحمدان",
+      "given": "ناصر",
+      "family": "الحمدان",
+      "tribe": "بني تميم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جد يوسف الحمدان لأبيه، وأخ موضي الحمدان (الجدة الكبرى). شقيقان من نفس الأب — والد ناصر وموضي غير موثّق بعد."
+    },
+
+    "p_tariq_1951": {
+      "fullName": "طارق عثمان عبدالله القصبي",
+      "given": "طارق",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1951 },
+      "places": ["الزبير", "الرياض", "مكة"],
+      "occupations": ["مهندس مدني", "نائب مدير عام مؤسسة كرا للمقاولات", "مؤسس شركة الرائد العربي للحاسب الآلي (RCTC)", "مدير عام شركة مكة للإنشاء والتعمير", "رئيس الشركة السودانية الأفريقية"],
+      "events": [
+        { "year": 1968, "label": "تخرّج من ثانوية الزبير وانتقل إلى الرياض (الابتدائية والمتوسطة في مدرسة النجاة الأهلية)" },
+        { "year": 1974, "label": "تزوّج من منيرة عبدالله القاسم في ٢/٦/١٩٧٤م" },
+        { "year": 1975, "label": "تخرّج من كلية الهندسة بجامعة الملك سعود (هندسة مدنية) وانتقل إلى مكة" },
+        { "year": 1975, "label": "بدأ مهندس مشاريع طرق وجسور في مؤسسة كرا للمقاولات بمكة" },
+        { "year": 1981, "label": "أسس شركة الرائد العربي للحاسب الآلي (RCTC) بالشراكة — طوّرت برنامجًا لترميز الحروف العربية باستخدام أحرف ASCII" },
+        { "year": 1987, "label": "ترقّى إلى نائب مدير عام كرا للمقاولات قبل أن يغادرها" },
+        { "year": 1988, "label": "تولّى منصب المدير العام لشركة مكة للإنشاء والتعمير خلال فترة تأسيسها" }
+      ],
+      "notes": "درس الابتدائية والمتوسطة في مدرسة النجاة الأهلية في الزبير، ثم الثانوية في ثانوية الزبير لمدة سنتين وتخرج منها ١٩٦٨-١٩٦٩م تقريبًا. التحق بكلية الهندسة في جامعة الملك سعود بالرياض لدراسة الهندسة المدنية وتخرّج أواخر عام ١٩٧٥م. كان يقضي الإجازات الصيفية في التدريب مع مؤسسة كرا للمقاولات (طريق المدينة-خيبر، طريق خميس مشيط-ظهران الجنوب)، وفترة الحج في خدمة الحجيج مع جوّالة الجامعة لرسم خرائط منى لدلالة الحجاج. تزوّج منيرة بنت عبدالله القاسم في ٢/٦/١٩٧٤م، وسكنا في بيت العائلة في حي الملز لمدة عام. بعد التخرج انتقل إلى مكة للعمل مهندس مشاريع طرق وجسور في مؤسسة كرا للمقاولات، ثم تدرّج إلى مدير مشروع، فنائب مدير عام حتى ١٩٨٧م تقريبًا. أسس عام ١٩٨١م شركة الرائد العربي للحاسب الآلي (RCTC) بالشراكة، وطوّرت الشركة برنامجًا لترميز الحروف العربية باستخدام أحرف ASCII. أسس مع المهندس منصور بن عبدالرحمن القاسم -رحمه الله- مكتب بيت الخبرة للاستشارات الهندسية بالرياض. في عام ١٩٨٨م انتقل ليكون المدير العام لشركة مكة للإنشاء والتعمير في فترة تأسيسها وإنهاء تصاميمها وبدء تنفيذ مقرها أمام الحرم المكي الشريف. ثم استقطبه الشيخ سليمان بن عبدالعزيز الراجحي لرئاسة الشركة السودانية الأفريقية التي أسسها صالح كامل وسليمان الراجحي وإبراهيم أفندي."
+    },
+    "p_manal_alqasim": {
+      "fullName": "منيرة عبدالله القاسم آل عاصم القحاطين",
+      "given": "منيرة",
+      "family": "آل عاصم",
+      "tribe": "الجحادر القحاطين",
+      "tribalRootId": "p_qasim_alasem_qahatin",
+      "gender": "female",
+      "fatherId": "p_abdullah_alqasim_father",
+      "motherId": "p_noura_alsadhan",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة طارق عثمان القصبي. تزوّجها في ٢/٦/١٩٧٤م. والدها عبدالله القاسم، ووالدتها نورة بنت صالح السدحان. تنحدر من القاسم آل عاصم من الجحادر القحاطين — وهو نفس الأصل القبلي الذي يرجع إليه نسب القصبي. أي أن طارق وزوجته منيرة يلتقيان في النسب القبلي البعيد."
+    },
+    "p_abdullah_alqasim_father": {
+      "fullName": "عبدالله القاسم آل عاصم",
+      "given": "عبدالله",
+      "family": "آل عاصم",
+      "tribe": "الجحادر القحاطين",
+      "tribalRootId": "p_qasim_alasem_qahatin",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد منيرة عبدالله القاسم زوجة طارق عثمان القصبي."
+    },
+    "p_noura_alsadhan": {
+      "fullName": "نورة صالح السدحان",
+      "given": "نورة",
+      "family": "السدحان",
+      "fatherId": "p_saleh_alsadhan",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والدة منيرة عبدالله القاسم زوجة طارق عثمان القصبي."
+    },
+    "p_saleh_alsadhan": {
+      "fullName": "صالح السدحان",
+      "given": "صالح",
+      "family": "السدحان",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد نورة السدحان، وجد منيرة عبدالله القاسم لأمها."
+    },
+
+    "p_qasim_1952": {
+      "fullName": "قاسم عثمان عبدالله القصبي",
+      "given": "قاسم",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1952 },
+      "places": ["الزبير", "الرياض"],
+      "events": [
+        { "year": 1970, "label": "غادر الزبير وانتقل إلى الرياض لدراسة الطب (تقريبًا)" },
+        { "year": 1976, "label": "غادر الرياض (تقريبًا)" }
+      ],
+      "notes": "غادر الزبير حوالي ١٩٧٠م ودرس الطب في الرياض. غادر الرياض حوالي ١٩٧٦م."
+    },
+    "p_aliaa_almuhaidib": {
+      "fullName": "عالية المهيدب",
+      "given": "عالية",
+      "family": "المهيدب",
+      "tribe": "بني تميم",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة قاسم عثمان القصبي. (المعرّف \"p_aliaa_almuhaidib\" قديم — كان الاسم مسجَّلًا خطأً \"علياء\" وتم تصحيحه إلى عالية.)"
+    },
+
+    "p_khawla_1955": {
+      "fullName": "خولة عثمان عبدالله القصبي",
+      "given": "خولة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1955, "month": 11, "day": 11 }
+    },
+    "p_tariq_alrushud": {
+      "fullName": "طارق عبدالمحسن الرشود",
+      "given": "طارق",
+      "family": "الرشود",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "isDeceased": true,
+      "notes": "طليق خولة عثمان القصبي (انفصلا قبل وفاته). الله يرحمه. أبو سارة ويوسف وإبراهيم وهيا وصالح وعبدالله ونائلة وسلمان."
+    },
+
+    "p_khalid_1957": {
+      "fullName": "خالد عثمان عبدالله القصبي",
+      "given": "خالد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1957 },
+      "places": ["الزبير", "الرياض", "كليفلاند", "تورانس", "فرزنو", "دنفر"],
+      "events": [
+        { "year": 1975, "label": "سافر إلى أمريكا (كليفلاند → تورانس → فرزنو → دنفر)" },
+        { "year": 1984, "label": "رجع من أمريكا" }
+      ],
+      "notes": "سافر إلى أمريكا ١٩٧٥م إلى ١٩٨٤م — كليفلاند، تورانس كاليفورنيا، فرزنو، دنفر."
+    },
+
+    "p_muna_1957": {
+      "fullName": "منى عبدالله عثمان القصبي",
+      "given": "منى",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdullah_1922",
+      "motherId": "p_mushira_kassab",
+      "birth": { "year": 1957 },
+      "death": { "year": 2026, "month": 4, "day": 27 },
+      "isDeceased": true,
+      "notes": "الله يرحمها. توفّيت في ٢٧/٤/٢٠٢٦م. بنت عبدالله ١٩٢٠ (عمّ عبدالمحسن، وأخ أبيه أحمد ١٩٦٠) من زوجته الثانية مشيرة كسّاب — أي أنها بنت عم عبدالمحسن (وليست عمته)، وبنت أخ أحمد. تزوّجت مرّتين: الأولى من عبدالقادر البسام (طلّقها — بلا أبناء)، والثانية من أحمد ظهران (الله يرحمه) — انفصلا ثم توفي قبلها، وأنجبت منه: نايف وهيفاء ونوف وعبدالله."
+    },
+    "p_ahmed_alghamdi": {
+      "fullName": "أحمد ظهران",
+      "given": "أحمد",
+      "family": "ظهران",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "isDeceased": true,
+      "notes": "زوج منى عبدالله القصبي. الله يرحمه. أبو نايف وهيفاء ونوف وعبدالله. (المعرّف \"p_ahmed_alghamdi\" قديم — كان اسم العائلة مسجَّلًا خطأً \"الغامدي\" وتم تصحيحه إلى \"ظهران\" بحسب سجل أحفاد عثمان.)"
+    },
+    "p_naif_alghamdi": {
+      "fullName": "نايف أحمد ظهران",
+      "given": "نايف",
+      "family": "ظهران",
+      "gender": "male",
+      "fatherId": "p_ahmed_alghamdi",
+      "motherId": "p_muna_1957",
+      "isPlaceholder": false,
+      "notes": "ابن منى عبدالله القصبي وأحمد ظهران (رحمه الله). زوجته رغدة الوراق."
+    },
+
+    "p_majed_1960": {
+      "fullName": "ماجد عبدالله عثمان القصبي",
+      "given": "ماجد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_1922",
+      "motherId": "p_mushira_kassab",
+      "birth": { "year": 1960, "month": 1, "day": 24 },
+      "notes": "ابن عبدالله ١٩٢٢ من زوجته الثانية مشيرة كسّاب. زوجته إيمان أبالخيل."
+    },
+
+    "p_ahmed_1960": {
+      "fullName": "أحمد عثمان عبدالله القصبي",
+      "given": "أحمد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "kunya": "أبو عبدالرحمن",
+      "birth": { "year": 1960, "month": 6, "day": 28 },
+      "places": ["كولومبس، أوهايو", "بولدر، كولورادو"],
+      "events": [
+        { "year": 1972, "label": "تخرّج من المرحلة الابتدائية — مدرسة جرير الابتدائية" },
+        { "year": 1975, "label": "تخرّج من المرحلة المتوسطة — المتوسطة النموذجية" },
+        { "year": 1978, "label": "تخرّج من المرحلة الثانوية — ثانوية اليرموك" },
+        { "year": 1983, "label": "تخرّج بشهادة البكالوريوس في الهندسة المدنية — جامعة الملك سعود" },
+        { "year": 1983, "label": "تزوّج (نهاية ١٩٨٣م)" },
+        { "year": 1984, "label": "سافر إلى أمريكا" },
+        { "year": 1988, "label": "تخرّج بشهادة الماجستير في الهندسة المدنية — جامعة ولاية أوهايو، كولومبس" },
+        { "year": 1998, "label": "تخرّج بشهادة الدكتوراه في الهندسة المدنية — جامعة كولورادو بولدر" }
+      ]
+    },
+
+    "p_salwa_1962": {
+      "fullName": "سلوى عثمان عبدالله القصبي",
+      "given": "سلوى",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1962 }
+    },
+    "p_abdulrazaq_almushrif": {
+      "fullName": "عبدالرزاق عبدالكريم المشرف",
+      "given": "عبدالرزاق",
+      "family": "المشرف",
+      "tribe": "المشارفة من تميم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج سلوى عثمان القصبي. عائلة المشرف من المشارفة من تميم."
+    },
+
+    "p_saad_1966": {
+      "fullName": "سعد عثمان عبدالله القصبي",
+      "given": "سعد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_1898",
+      "motherId": null,
+      "birth": { "year": 1966, "month": 8, "day": 8 }
+    },
+
+    "p_mai_qassabi": {
+      "fullName": "مي عبدالله عثمان القصبي",
+      "given": "مي",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdullah_1922",
+      "motherId": "p_mushira_kassab",
+      "notes": "ابنة عبدالله ١٩٢٠ من زوجته الثانية مشيرة كسّاب. زوجها أيمن أبالخيل (العم أيمن). أبناؤهما: عبدالرحمن وعبدالإله وهيا. (سابقاً نُسب لها زواج من ابن البسام — تم تصحيحه: ذلك الزواج كان لأختها منى.)"
+    },
+    "p_ibn_albassam": {
+      "fullName": "عبدالقادر البسام",
+      "given": "عبدالقادر",
+      "family": "البسام",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "الزوج الأول لمنى عبدالله القصبي (طلّقها — لم يُنجبا). (المعرّف \"p_ibn_albassam\" قديم — كان مسجَّلًا خطأً كزوج مي وتم تصحيحه بحسب توضيح العائلة: زوج منى وليس مي.)"
+    },
+
+    "p_osama_qassabi": {
+      "fullName": "أسامة عبدالله عثمان القصبي",
+      "given": "أسامة",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_1922",
+      "motherId": "p_mushira_kassab",
+      "notes": "ابن عبدالله ١٩٢٢ من زوجته الثانية مشيرة كسّاب."
+    },
+
+    "p_walid_albalali": {
+      "fullName": "وليد خالد عبداللطيف البلالي",
+      "given": "وليد",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+    "p_abdullatif_albalali": {
+      "fullName": "عبداللطيف خالد عبداللطيف البلالي",
+      "given": "عبداللطيف",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+    "p_rola_albalali": {
+      "fullName": "رولا خالد عبداللطيف البلالي",
+      "given": "رولا",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+    "p_omar_albalali": {
+      "fullName": "عمر خالد عبداللطيف البلالي",
+      "given": "عمر",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+    "p_reem_albalali": {
+      "fullName": "ريم خالد عبداللطيف البلالي",
+      "given": "ريم",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+    "p_abdulaziz_albalali": {
+      "fullName": "عبدالعزيز خالد عبداللطيف البلالي",
+      "given": "عبدالعزيز",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+    "p_saad_albalali": {
+      "fullName": "سعد خالد عبداللطيف البلالي",
+      "given": "سعد",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+    "p_maha_albalali": {
+      "fullName": "مها خالد عبداللطيف البلالي",
+      "given": "مها",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_khalid_albalali",
+      "motherId": "p_hind_1948"
+    },
+
+    "p_haifa_alghamdi": {
+      "fullName": "هيفاء أحمد ظهران",
+      "given": "هيفاء",
+      "family": "ظهران",
+      "gender": "female",
+      "fatherId": "p_ahmed_alghamdi",
+      "motherId": "p_muna_1957",
+      "notes": "زوجها عبدالعزيز الأشعري. أبناؤهما: يوسف وياسمين."
+    },
+    "p_nawf_alghamdi": {
+      "fullName": "نوف أحمد ظهران",
+      "given": "نوف",
+      "family": "ظهران",
+      "gender": "female",
+      "fatherId": "p_ahmed_alghamdi",
+      "motherId": "p_muna_1957",
+      "notes": "زوجها أحمد رشاد صقر. أبناؤهما: محمد وعبدالله وسوزانا."
+    },
+    "p_abdullah_alghamdi": {
+      "fullName": "عبدالله أحمد ظهران",
+      "given": "عبدالله",
+      "family": "ظهران",
+      "gender": "male",
+      "fatherId": "p_ahmed_alghamdi",
+      "motherId": "p_muna_1957"
+    },
+    "p_aymen_abalkhail": {
+      "fullName": "أيمن أبالخيل",
+      "given": "أيمن",
+      "family": "أبالخيل",
+      "tribe": "بن نجيد من المصاليخ من عنزة",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج مي عبدالله القصبي. أبو عبدالرحمن وعبدالإله وهيا. (مستقلّ تمامًا عن إيمان أبالخيل زوجة ماجد عبدالله القصبي — اشتراك في اسم العائلة فقط.)"
+    },
+    "p_abdulrahman_aymen_abalkhail": {
+      "fullName": "عبدالرحمن أيمن أبالخيل",
+      "given": "عبدالرحمن",
+      "family": "أبالخيل",
+      "gender": "male",
+      "fatherId": "p_aymen_abalkhail",
+      "motherId": "p_mai_qassabi"
+    },
+    "p_abdulilah_abalkhail": {
+      "fullName": "عبدالإله أيمن أبالخيل",
+      "given": "عبدالإله",
+      "family": "أبالخيل",
+      "gender": "male",
+      "fatherId": "p_aymen_abalkhail",
+      "motherId": "p_mai_qassabi",
+      "notes": "زوجته لمى المهنا. أبناؤهما: عبدالعزيز وخالد."
+    },
+    "p_haya_aymen_abalkhail": {
+      "fullName": "هيا أيمن أبالخيل",
+      "given": "هيا",
+      "family": "أبالخيل",
+      "gender": "female",
+      "fatherId": "p_aymen_abalkhail",
+      "motherId": "p_mai_qassabi",
+      "notes": "زوجها محمد الزامل (يُكنّى أبو عبدالوهاب). أبناؤهما: عبدالوهاب ومي وعبير وأسمى."
+    },
+
+
+    "p_abdullah_majed": {
+      "fullName": "عبدالله ماجد عبدالله القصبي",
+      "given": "عبدالله",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_majed_1960",
+      "motherId": "p_eman_abalkhail",
+      "notes": "زوجته نورا الزاهد."
+    },
+    "p_sultan_abdullah_majed": {
+      "fullName": "سلطان عبدالله ماجد القصبي",
+      "given": "سلطان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_majed",
+      "motherId": "p_noura_alzahed",
+      "birth": { "year": 2012, "approximate": true }
+    },
+    "p_majed_abdullah_majed": {
+      "fullName": "ماجد عبدالله ماجد القصبي",
+      "given": "ماجد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_majed",
+      "motherId": "p_noura_alzahed",
+      "birth": { "year": 2015, "approximate": true }
+    },
+    "p_ibrahim_abdullah_majed": {
+      "fullName": "إبراهيم عبدالله ماجد القصبي",
+      "given": "إبراهيم",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_majed",
+      "motherId": "p_noura_alzahed",
+      "birth": { "year": 2019, "approximate": true }
+    },
+    "p_eman_abalkhail": {
+      "fullName": "إيمان أبالخيل",
+      "given": "إيمان",
+      "family": "أبالخيل",
+      "tribe": "بن نجيد من المصاليخ من عنزة",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة ماجد عبدالله عثمان القصبي. أم نورة وعبدالله وليلى."
+    },
+    "p_noura_alzahed": {
+      "fullName": "نورا الزاهد",
+      "given": "نورا",
+      "family": "الزاهد",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبدالله ماجد عبدالله القصبي. أم سلطان وماجد وإبراهيم."
+    },
+    "p_abdulaziz_majed_1985": {
+      "fullName": "عبدالعزيز ماجد عبدالله القصبي",
+      "given": "عبدالعزيز",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_majed_1960",
+      "motherId": null,
+      "birth": { "year": 1985, "month": 7, "day": 30 }
+    },
+    "p_yasmin_abdulaziz_majed": {
+      "fullName": "ياسمين عبدالعزيز ماجد القصبي",
+      "given": "ياسمين",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdulaziz_majed_1985",
+      "motherId": "p_noura_alhamdan_1985",
+      "birth": { "year": 2014, "month": 2, "day": 27 }
+    },
+    "p_majed_abdulaziz_majed": {
+      "fullName": "ماجد عبدالعزيز ماجد القصبي",
+      "given": "ماجد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_majed_1985",
+      "motherId": "p_noura_alhamdan_1985",
+      "birth": { "year": 2017, "month": 6, "day": 14 }
+    },
+    "p_zeinah_abdulaziz_majed": {
+      "fullName": "زينة عبدالعزيز ماجد القصبي",
+      "given": "زينة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdulaziz_majed_1985",
+      "motherId": "p_noura_alhamdan_1985",
+      "birth": { "year": 2024, "month": 3, "day": 24 }
+    },
+    "p_noura_majed": {
+      "fullName": "نورة ماجد عبدالله القصبي",
+      "given": "نورة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_majed_1960",
+      "motherId": "p_eman_abalkhail",
+      "birth": { "year": 1988, "approximate": true },
+      "notes": "زوجها فهد خشيم. أولادها: ريم وإيمان وهديل."
+    },
+    "p_layla_majed": {
+      "fullName": "ليلى ماجد عبدالله القصبي",
+      "given": "ليلى",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_majed_1960",
+      "motherId": "p_eman_abalkhail",
+      "birth": { "year": 1994, "approximate": true },
+      "notes": "زوجها سلطان المسلم. أولادها: سلمى ولين وسارة."
+    },
+    "p_fahd_khasheim": {
+      "fullName": "فهد خشيم",
+      "given": "فهد",
+      "family": "خشيم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج نورة ماجد عبدالله القصبي."
+    },
+    "p_sultan_almuslim": {
+      "fullName": "سلطان المسلم",
+      "given": "سلطان",
+      "family": "المسلم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج ليلى ماجد عبدالله القصبي."
+    },
+    "p_reem_fahd_2014": {
+      "fullName": "ريم فهد خشيم",
+      "given": "ريم",
+      "family": "خشيم",
+      "gender": "female",
+      "fatherId": "p_fahd_khasheim",
+      "motherId": "p_noura_majed",
+      "birth": { "year": 2014, "approximate": true }
+    },
+    "p_eman_fahd_2017": {
+      "fullName": "إيمان فهد خشيم",
+      "given": "إيمان",
+      "family": "خشيم",
+      "gender": "female",
+      "fatherId": "p_fahd_khasheim",
+      "motherId": "p_noura_majed",
+      "birth": { "year": 2017, "approximate": true }
+    },
+    "p_hadeel_fahd_2023": {
+      "fullName": "هديل فهد خشيم",
+      "given": "هديل",
+      "family": "خشيم",
+      "gender": "female",
+      "fatherId": "p_fahd_khasheim",
+      "motherId": "p_noura_majed",
+      "birth": { "year": 2023, "approximate": true }
+    },
+    "p_salma_sultan_2019": {
+      "fullName": "سلمى سلطان المسلم",
+      "given": "سلمى",
+      "family": "المسلم",
+      "gender": "female",
+      "fatherId": "p_sultan_almuslim",
+      "motherId": "p_layla_majed",
+      "birth": { "year": 2019, "approximate": true }
+    },
+    "p_leen_sultan_2024": {
+      "fullName": "لين سلطان المسلم",
+      "given": "لين",
+      "family": "المسلم",
+      "gender": "female",
+      "fatherId": "p_sultan_almuslim",
+      "motherId": "p_layla_majed",
+      "birth": { "year": 2024, "approximate": true }
+    },
+    "p_sara_sultan_2026": {
+      "fullName": "سارة سلطان المسلم",
+      "given": "سارة",
+      "family": "المسلم",
+      "gender": "female",
+      "fatherId": "p_sultan_almuslim",
+      "motherId": "p_layla_majed",
+      "birth": { "year": 2026, "approximate": true }
+    },
+
+    "p_khalid_mohammed": {
+      "fullName": "خالد محمد عثمان القصبي",
+      "given": "خالد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_mohammed_1940",
+      "motherId": "p_khawla_alanqari",
+      "isPlaceholder": true,
+      "notes": "الابن الأكبر لمحمد عثمان القصبي ١٩٤٠ وخولة الفقيه العنقري. أخوه الأصغر ناصر. تفاصيل زواجه وأبنائه غير موثّقة بعد."
+    },
+    "p_naser_mohammed": {
+      "fullName": "ناصر محمد عثمان القصبي",
+      "given": "ناصر",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_mohammed_1940",
+      "motherId": "p_khawla_alanqari",
+      "notes": "الابن الأصغر لمحمد عثمان القصبي ١٩٤٠. أخوه الأكبر خالد. أبو سارة وريم ومحمد ورنا."
+    },
+    "p_sara_naser": {
+      "fullName": "سارة ناصر محمد القصبي",
+      "given": "سارة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_naser_mohammed",
+      "motherId": "p_unnamed_fawzi_daughter",
+      "birth": { "year": 2005, "approximate": true }
+    },
+    "p_reem_naser": {
+      "fullName": "ريم ناصر محمد القصبي",
+      "given": "ريم",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_naser_mohammed",
+      "motherId": "p_unnamed_fawzi_daughter",
+      "birth": { "year": 2007, "approximate": true }
+    },
+    "p_mohammed_naser": {
+      "fullName": "محمد ناصر محمد القصبي",
+      "given": "محمد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_naser_mohammed",
+      "motherId": "p_unnamed_fawzi_daughter",
+      "birth": { "year": 2013, "approximate": true }
+    },
+    "p_rana_naser": {
+      "fullName": "رنا ناصر محمد القصبي",
+      "given": "رنا",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_naser_mohammed",
+      "motherId": "p_unnamed_fawzi_daughter",
+      "birth": { "year": 2017, "approximate": true }
+    },
+
+    "p_maha_yusuf_1975": {
+      "fullName": "مها يوسف عثمان القصبي",
+      "given": "مها",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_yusuf_1945",
+      "motherId": "p_nawal_alrushud",
+      "birth": { "year": 1975 }
+    },
+    "p_riyadh_alrubaya": {
+      "fullName": "رياض توفيق الربيعة",
+      "given": "رياض",
+      "family": "الربيعة",
+      "fatherId": "p_tawfiq_alrubaya",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج مها يوسف القصبي. أبو نايف وعبدالعزيز وعبدالرحمن وسعود وديمه. والده توفيق الربيعة."
+    },
+    "p_tawfiq_alrubaya": {
+      "fullName": "توفيق الربيعة",
+      "given": "توفيق",
+      "family": "الربيعة",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد رياض الربيعة زوج مها يوسف القصبي."
+    },
+    "p_nayef_riyadh_1995": {
+      "fullName": "نايف رياض الربيعة",
+      "given": "نايف",
+      "family": "الربيعة",
+      "gender": "male",
+      "fatherId": "p_riyadh_alrubaya",
+      "motherId": "p_maha_yusuf_1975",
+      "birth": { "year": 1994 }
+    },
+    "p_abdulaziz_riyadh_1999": {
+      "fullName": "عبدالعزيز رياض الربيعة",
+      "given": "عبدالعزيز",
+      "family": "الربيعة",
+      "gender": "male",
+      "fatherId": "p_riyadh_alrubaya",
+      "motherId": "p_maha_yusuf_1975",
+      "birth": { "year": 1999 }
+    },
+    "p_abdulrahman_riyadh_2003": {
+      "fullName": "عبدالرحمن رياض الربيعة",
+      "given": "عبدالرحمن",
+      "family": "الربيعة",
+      "gender": "male",
+      "fatherId": "p_riyadh_alrubaya",
+      "motherId": "p_maha_yusuf_1975",
+      "birth": { "year": 2002 }
+    },
+    "p_saud_riyadh_2005": {
+      "fullName": "سعود رياض الربيعة",
+      "given": "سعود",
+      "family": "الربيعة",
+      "gender": "male",
+      "fatherId": "p_riyadh_alrubaya",
+      "motherId": "p_maha_yusuf_1975",
+      "birth": { "year": 2004 }
+    },
+    "p_deemah_riyadh_2009": {
+      "fullName": "ديمة رياض الربيعة",
+      "given": "ديمة",
+      "family": "الربيعة",
+      "gender": "female",
+      "fatherId": "p_riyadh_alrubaya",
+      "motherId": "p_maha_yusuf_1975",
+      "birth": { "year": 2008 }
+    },
+    "p_mishaal_yusuf_1977": {
+      "fullName": "مشعل يوسف عثمان القصبي",
+      "given": "مشعل",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_yusuf_1945",
+      "motherId": "p_nawal_alrushud",
+      "birth": { "year": 1977, "month": 1, "day": 20 }
+    },
+    "p_fahd_yusuf_1977": {
+      "fullName": "فهد يوسف عثمان القصبي",
+      "given": "فهد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_yusuf_1945",
+      "motherId": "p_nawal_alrushud",
+      "birth": { "year": 1977 },
+      "notes": "زوجته نوف القاسم. أبناؤه: ناصر وسطام ومهند."
+    },
+    "p_nawf_alqasim_fahd_wife": {
+      "fullName": "نوف عبدالعزيز القاسم آل عاصم القحاطين",
+      "given": "نوف",
+      "family": "القاسم آل عاصم القحاطين",
+      "tribe": "الجحادر القحاطين",
+      "tribalRootId": "p_qasim_alasem_qahatin",
+      "fatherId": "p_abdulaziz_alqasim_father",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة فهد يوسف القصبي. أم ناصر وسطام ومهند. تنحدر من القاسم آل عاصم من الجحادر القحاطين — نفس الأصل القبلي للقصبي ولمنيرة عبدالله القاسم (زوجة طارق ١٩٥١)."
+    },
+    "p_abdulaziz_alqasim_father": {
+      "fullName": "عبدالعزيز القاسم آل عاصم القحاطين",
+      "given": "عبدالعزيز",
+      "family": "القاسم آل عاصم القحاطين",
+      "tribe": "الجحادر القحاطين",
+      "tribalRootId": "p_qasim_alasem_qahatin",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد نوف القاسم زوجة فهد يوسف القصبي."
+    },
+    "p_naser_fahd_2001": {
+      "fullName": "ناصر فهد يوسف القصبي",
+      "given": "ناصر",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_fahd_yusuf_1977",
+      "motherId": "p_nawf_alqasim_fahd_wife",
+      "birth": { "year": 2001 }
+    },
+    "p_sittam_fahd_2006": {
+      "fullName": "سطام فهد يوسف القصبي",
+      "given": "سطام",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_fahd_yusuf_1977",
+      "motherId": "p_nawf_alqasim_fahd_wife",
+      "birth": { "year": 2005 }
+    },
+    "p_muhannad_fahd_2011": {
+      "fullName": "مهند فهد يوسف القصبي",
+      "given": "مهند",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_fahd_yusuf_1977",
+      "motherId": "p_nawf_alqasim_fahd_wife",
+      "birth": { "year": 2010 }
+    },
+    "p_moudi_yusuf_1980": {
+      "fullName": "موضي يوسف عثمان القصبي",
+      "given": "موضي",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_yusuf_1945",
+      "motherId": "p_nawal_alrushud",
+      "birth": { "year": 1980 },
+      "notes": "زوجها سعود الرقراق. أبناؤهما: نورة وسارة (توأم تقريباً) وعلياء ونواف."
+    },
+    "p_saud_alraqraq_husband": {
+      "fullName": "سعود محمد الرقراق الشايع",
+      "given": "سعود",
+      "family": "الرقراق الشايع",
+      "tribe": "بني تميم",
+      "fatherId": "p_mohammed_alraqraq",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": false,
+      "notes": "زوج موضي يوسف القصبي. ابن محمد سعد الرقراق الشايع (أخو نورة الرقراق جدتي الكبرى). أخته هديل تزوّجت صالح يوسف القصبي. أبو نورة وسارة وعلياء ونواف."
+    },
+    "p_hadeel_alraqraq": {
+      "fullName": "هديل محمد الرقراق الشايع",
+      "given": "هديل",
+      "family": "الرقراق الشايع",
+      "tribe": "بني تميم",
+      "fatherId": "p_mohammed_alraqraq",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": false,
+      "notes": "زوجة صالح يوسف عثمان القصبي. بنت محمد سعد الرقراق الشايع (أخو نورة الرقراق جدتي الكبرى). أخوها سعود تزوّج موضي يوسف القصبي."
+    },
+    "p_noura_saud_raqraq_2004": {
+      "fullName": "نورة سعود محمد الرقراق الشايع",
+      "given": "نورة",
+      "family": "الرقراق الشايع",
+      "gender": "female",
+      "fatherId": "p_saud_alraqraq_husband",
+      "motherId": "p_moudi_yusuf_1980",
+      "birth": { "year": 2004 }
+    },
+    "p_sara_saud_raqraq_2004": {
+      "fullName": "سارة سعود محمد الرقراق الشايع",
+      "given": "سارة",
+      "family": "الرقراق الشايع",
+      "gender": "female",
+      "fatherId": "p_saud_alraqraq_husband",
+      "motherId": "p_moudi_yusuf_1980",
+      "birth": { "year": 2004 },
+      "notes": "بعمر نورة تقريباً — قد تكون توأم."
+    },
+    "p_alyaa_saud_raqraq_2011": {
+      "fullName": "علياء سعود محمد الرقراق الشايع",
+      "given": "علياء",
+      "family": "الرقراق الشايع",
+      "gender": "female",
+      "fatherId": "p_saud_alraqraq_husband",
+      "motherId": "p_moudi_yusuf_1980",
+      "birth": { "year": 2010 }
+    },
+    "p_nawaf_saud_raqraq_2015": {
+      "fullName": "نواف سعود محمد الرقراق الشايع",
+      "given": "نواف",
+      "family": "الرقراق الشايع",
+      "gender": "male",
+      "fatherId": "p_saud_alraqraq_husband",
+      "motherId": "p_moudi_yusuf_1980",
+      "birth": { "year": 2014 },
+      "notes": "أرضعته لولو المديهيم بالرضاعة (مع سعد عبدالله طارق القصبي ووليد محمد السويدان)."
+    },
+    "p_uthman_yusuf_1983": {
+      "fullName": "عثمان يوسف عثمان القصبي",
+      "given": "عثمان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_yusuf_1945",
+      "motherId": "p_nawal_alrushud",
+      "birth": { "year": 1983, "month": 12, "day": 26 },
+      "notes": "زوجته سارة الربيعة. أبناؤهما: يوسف وبسمة."
+    },
+    "p_sara_alrubaya_uthman_wife": {
+      "fullName": "سارة الربيعة",
+      "given": "سارة",
+      "family": "الربيعة",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عثمان يوسف القصبي. أم يوسف وبسمة. (مختلفة عن رياض الربيعة زوج مها يوسف القصبي — قد تكون من نفس العائلة.)"
+    },
+    "p_yusuf_uthman_2009": {
+      "fullName": "يوسف عثمان يوسف القصبي",
+      "given": "يوسف",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_yusuf_1983",
+      "motherId": "p_sara_alrubaya_uthman_wife",
+      "birth": { "year": 2008 }
+    },
+    "p_basma_uthman_2013": {
+      "fullName": "بسمة عثمان يوسف القصبي",
+      "given": "بسمة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_uthman_yusuf_1983",
+      "motherId": "p_sara_alrubaya_uthman_wife",
+      "birth": { "year": 2012 }
+    },
+    "p_saleh_yusuf_1989": {
+      "fullName": "صالح يوسف عثمان القصبي",
+      "given": "صالح",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_yusuf_1945",
+      "motherId": "p_nawal_alrushud",
+      "birth": { "year": 1989, "month": 7, "day": 7 }
+    },
+    "p_haifa_saleh_2020": {
+      "fullName": "هيفاء صالح يوسف القصبي",
+      "given": "هيفاء",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_saleh_yusuf_1989",
+      "motherId": "p_hadeel_alraqraq",
+      "birth": { "year": 2020, "month": 1, "day": 12 }
+    },
+    "p_abdulaziz_saleh_2023": {
+      "fullName": "عبدالعزيز صالح يوسف القصبي",
+      "given": "عبدالعزيز",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_saleh_yusuf_1989",
+      "motherId": "p_hadeel_alraqraq",
+      "birth": { "year": 2023, "month": 6, "day": 4 }
+    },
+
+    "p_roqaya_alaqil": {
+      "fullName": "رقية خالد العقيل",
+      "given": "رقية",
+      "family": "العقيل",
+      "fatherId": "p_khalid_alaqil_roqaya_father",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "الزوجة الأولى لمشعل يوسف القصبي (طلّقها لاحقاً). أم عبدالله ولين وسعود ويوسف ومها."
+    },
+    "p_khalid_alaqil_roqaya_father": {
+      "fullName": "خالد العقيل",
+      "given": "خالد",
+      "family": "العقيل",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد رقية العقيل (طليقة مشعل يوسف القصبي)."
+    },
+    "p_khulood_albadr": {
+      "fullName": "خلود البدر",
+      "given": "خلود",
+      "family": "البدر",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "الزوجة الثانية لمشعل يوسف القصبي. أم فرح."
+    },
+    "p_abdullah_mishaal_2001": {
+      "fullName": "عبدالله مشعل يوسف القصبي",
+      "given": "عبدالله",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_mishaal_yusuf_1977",
+      "motherId": "p_roqaya_alaqil",
+      "birth": { "year": 2001, "month": 5, "day": 30 }
+    },
+    "p_leen_mishaal_2003": {
+      "fullName": "لين مشعل يوسف القصبي",
+      "given": "لين",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_mishaal_yusuf_1977",
+      "motherId": "p_roqaya_alaqil",
+      "birth": { "year": 2003, "month": 10, "day": 21 }
+    },
+    "p_saud_mishaal_2008": {
+      "fullName": "سعود مشعل يوسف القصبي",
+      "given": "سعود",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_mishaal_yusuf_1977",
+      "motherId": "p_roqaya_alaqil",
+      "birth": { "year": 2008, "month": 11, "day": 20 }
+    },
+    "p_yusuf_mishaal_2011": {
+      "fullName": "يوسف مشعل يوسف القصبي",
+      "given": "يوسف",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_mishaal_yusuf_1977",
+      "motherId": "p_roqaya_alaqil",
+      "birth": { "year": 2011, "month": 10, "day": 10 }
+    },
+    "p_maha_mishaal_2013": {
+      "fullName": "مها مشعل يوسف القصبي",
+      "given": "مها",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_mishaal_yusuf_1977",
+      "motherId": "p_roqaya_alaqil",
+      "birth": { "year": 2013, "month": 9, "day": 5 }
+    },
+    "p_farah_mishaal_2014": {
+      "fullName": "فرح مشعل يوسف القصبي",
+      "given": "فرح",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_mishaal_yusuf_1977",
+      "motherId": "p_khulood_albadr",
+      "birth": { "year": 2014, "month": 6, "day": 4 }
+    },
+
+    "p_reem_alhamdan": {
+      "fullName": "ريم يوسف حمدان الحمدان",
+      "given": "ريم",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_yusuf_alhamdan",
+      "motherId": "p_asma_1949",
+      "birth": { "year": 1970, "month": 1, "day": 19 }
+    },
+    "p_rana_alhamdan": {
+      "fullName": "رنا يوسف حمدان الحمدان",
+      "given": "رنا",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_yusuf_alhamdan",
+      "motherId": "p_asma_1949",
+      "birth": { "year": 1974, "month": 11, "day": 8 }
+    },
+    "p_bader_alhamdan": {
+      "fullName": "بدر يوسف حمدان الحمدان",
+      "given": "بدر",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_yusuf_alhamdan",
+      "motherId": "p_asma_1949",
+      "birth": { "year": 1980, "month": 11, "day": 9 }
+    },
+    "p_noura_alhamdan_1985": {
+      "fullName": "نورة يوسف حمدان الحمدان",
+      "given": "نورة",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_yusuf_alhamdan",
+      "motherId": "p_asma_1949",
+      "birth": { "year": 1986 },
+      "notes": "زوجها عبدالعزيز ماجد عبدالله القصبي — وهو ابن ابن خالها. ماجد عبدالله ١٩٢٢ هو ابن خالها (عبدالله ١٩٢٢ أخو أمها أسماء)، فيكون عبدالعزيز ابن ابن خالها."
+    },
+    "p_hamdan_alhamdan": {
+      "fullName": "حمدان يوسف حمدان الحمدان",
+      "given": "حمدان",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_yusuf_alhamdan",
+      "motherId": "p_asma_1949",
+      "birth": { "year": 1987, "month": 7, "day": 12 }
+    },
+
+    "p_iyas_alhajeri": {
+      "fullName": "إياس سمير إبراهيم الهاجري",
+      "given": "إياس",
+      "family": "الهاجري",
+      "fatherId": "p_samir_alhajeri",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج ريم يوسف الحمدان."
+    },
+    "p_samir_alhajeri": {
+      "fullName": "سمير إبراهيم الهاجري",
+      "given": "سمير",
+      "family": "الهاجري",
+      "fatherId": "p_ibrahim_alhajeri",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد إياس الهاجري زوج ريم."
+    },
+    "p_ibrahim_alhajeri": {
+      "fullName": "إبراهيم الهاجري",
+      "given": "إبراهيم",
+      "family": "الهاجري",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جد إياس الهاجري لأبيه."
+    },
+
+    "p_mohammed_iyas_1994": {
+      "fullName": "محمد إياس سمير الهاجري",
+      "given": "محمد",
+      "family": "الهاجري",
+      "gender": "male",
+      "fatherId": "p_iyas_alhajeri",
+      "motherId": "p_reem_alhamdan",
+      "birth": { "year": 1994, "month": 2, "day": 4 }
+    },
+    "p_rawan_alhaider_iyas": {
+      "fullName": "روان الحيدر",
+      "given": "روان",
+      "family": "الحيدر",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة محمد إياس الهاجري. أم سعود."
+    },
+    "p_saud_mohammed_2024": {
+      "fullName": "سعود محمد إياس الهاجري",
+      "given": "سعود",
+      "family": "الهاجري",
+      "gender": "male",
+      "fatherId": "p_mohammed_iyas_1994",
+      "motherId": "p_rawan_alhaider_iyas",
+      "birth": { "year": 2024, "month": 10, "day": 21 }
+    },
+    "p_omar_iyas_1997": {
+      "fullName": "عمر إياس سمير الهاجري",
+      "given": "عمر",
+      "family": "الهاجري",
+      "gender": "male",
+      "fatherId": "p_iyas_alhajeri",
+      "motherId": "p_reem_alhamdan",
+      "birth": { "year": 1997, "month": 2, "day": 19 }
+    },
+    "p_suad_alsaleem": {
+      "fullName": "سعاد السليم",
+      "given": "سعاد",
+      "family": "السليم",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عمر إياس الهاجري. أم ريم."
+    },
+    "p_reem_omar_2026": {
+      "fullName": "ريم عمر إياس الهاجري",
+      "given": "ريم",
+      "family": "الهاجري",
+      "gender": "female",
+      "fatherId": "p_omar_iyas_1997",
+      "motherId": "p_suad_alsaleem",
+      "birth": { "year": 2026 }
+    },
+    "p_najood_iyas_1999": {
+      "fullName": "نجود إياس سمير الهاجري",
+      "given": "نجود",
+      "family": "الهاجري",
+      "gender": "female",
+      "fatherId": "p_iyas_alhajeri",
+      "motherId": "p_reem_alhamdan",
+      "birth": { "year": 1999, "month": 10, "day": 12 },
+      "notes": "تزوّجت عبدالله بن فهد المبارك في ٢٠٢٥م."
+    },
+    "p_abdullah_almubarak": {
+      "fullName": "عبدالله فهد عبدالله المبارك",
+      "given": "عبدالله",
+      "family": "المبارك",
+      "fatherId": "p_fahd_almubarak",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج نجود إياس الهاجري (تزوّجها ٢٠٢٥م). سُمّي على اسم جده عبدالله."
+    },
+    "p_fahd_almubarak": {
+      "fullName": "فهد عبدالله المبارك",
+      "given": "فهد",
+      "family": "المبارك",
+      "fatherId": "p_abdullah_elder_almubarak",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد عبدالله فهد المبارك زوج نجود إياس الهاجري."
+    },
+    "p_abdullah_elder_almubarak": {
+      "fullName": "عبدالله المبارك",
+      "given": "عبدالله",
+      "family": "المبارك",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جد عبدالله فهد المبارك (الذي سُمّي على اسمه)."
+    },
+    "p_lateefa_iyas_2001": {
+      "fullName": "لطيفة إياس سمير الهاجري",
+      "given": "لطيفة",
+      "family": "الهاجري",
+      "gender": "female",
+      "fatherId": "p_iyas_alhajeri",
+      "motherId": "p_reem_alhamdan",
+      "birth": { "year": 2001, "month": 8, "day": 3 }
+    },
+    "p_abdullah_iyas_2007": {
+      "fullName": "عبدالله إياس سمير الهاجري",
+      "given": "عبدالله",
+      "family": "الهاجري",
+      "gender": "male",
+      "fatherId": "p_iyas_alhajeri",
+      "motherId": "p_reem_alhamdan",
+      "birth": { "year": 2007, "month": 4, "day": 24 }
+    },
+
+    "p_ishaq_alhajeri": {
+      "fullName": "إسحاق حمود إسحاق الهاجري",
+      "given": "إسحاق",
+      "family": "الهاجري",
+      "fatherId": "p_humood_alhajeri",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج رنا يوسف الحمدان."
+    },
+    "p_humood_alhajeri": {
+      "fullName": "حمود إسحاق الهاجري",
+      "given": "حمود",
+      "family": "الهاجري",
+      "fatherId": "p_ishaq_elder_alhajeri",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد إسحاق الهاجري زوج رنا."
+    },
+    "p_ishaq_elder_alhajeri": {
+      "fullName": "إسحاق الهاجري",
+      "given": "إسحاق",
+      "family": "الهاجري",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جد إسحاق الهاجري الزوج لأبيه — سُمّي حفيده على اسمه."
+    },
+
+    "p_deem_ishaq_1999": {
+      "fullName": "ديم إسحاق حمود الهاجري",
+      "given": "ديم",
+      "family": "الهاجري",
+      "gender": "female",
+      "fatherId": "p_ishaq_alhajeri",
+      "motherId": "p_rana_alhamdan",
+      "birth": { "year": 1999, "month": 3, "day": 7 }
+    },
+    "p_noura_ishaq_2001": {
+      "fullName": "نورة إسحاق حمود الهاجري",
+      "given": "نورة",
+      "family": "الهاجري",
+      "gender": "female",
+      "fatherId": "p_ishaq_alhajeri",
+      "motherId": "p_rana_alhamdan",
+      "birth": { "year": 2001, "month": 2, "day": 4 }
+    },
+    "p_basma_ishaq_2006": {
+      "fullName": "بسمة إسحاق حمود الهاجري",
+      "given": "بسمة",
+      "family": "الهاجري",
+      "gender": "female",
+      "fatherId": "p_ishaq_alhajeri",
+      "motherId": "p_rana_alhamdan",
+      "birth": { "year": 2006, "month": 1, "day": 7 }
+    },
+    "p_ibrahim_ishaq_2007": {
+      "fullName": "إبراهيم إسحاق حمود الهاجري",
+      "given": "إبراهيم",
+      "family": "الهاجري",
+      "gender": "male",
+      "fatherId": "p_ishaq_alhajeri",
+      "motherId": "p_rana_alhamdan",
+      "birth": { "year": 2007, "month": 5, "day": 25 }
+    },
+    "p_dana_ishaq_2014": {
+      "fullName": "دانة إسحاق حمود الهاجري",
+      "given": "دانة",
+      "family": "الهاجري",
+      "gender": "female",
+      "fatherId": "p_ishaq_alhajeri",
+      "motherId": "p_rana_alhamdan",
+      "birth": { "year": 2014, "month": 8, "day": 25 }
+    },
+
+    "p_yusuf_bader_2009": {
+      "fullName": "يوسف بدر يوسف الحمدان",
+      "given": "يوسف",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_bader_alhamdan",
+      "motherId": "p_lulu_almudaihem",
+      "birth": { "year": 2009, "month": 1, "day": 10 }
+    },
+    "p_salma_bader_2015": {
+      "fullName": "سلمى بدر يوسف الحمدان",
+      "given": "سلمى",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_bader_alhamdan",
+      "motherId": "p_lulu_almudaihem",
+      "birth": { "year": 2015, "month": 1, "day": 14 }
+    },
+    "p_suleiman_bader_2020": {
+      "fullName": "سليمان بدر يوسف الحمدان",
+      "given": "سليمان",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_bader_alhamdan",
+      "motherId": "p_lulu_almudaihem",
+      "birth": { "year": 2020, "month": 2, "day": 29 }
+    },
+    "p_abdulaziz_bader_2021": {
+      "fullName": "عبدالعزيز بدر يوسف الحمدان",
+      "given": "عبدالعزيز",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_bader_alhamdan",
+      "motherId": "p_lulu_almudaihem",
+      "birth": { "year": 2021, "month": 3, "day": 7 }
+    },
+
+    "p_maryam_alqaraawi": {
+      "fullName": "مريم القرعاوي",
+      "given": "مريم",
+      "family": "القرعاوي",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة حمدان يوسف الحمدان. أم فهد ولميس وفيصل."
+    },
+    "p_fahd_hamdan_2014": {
+      "fullName": "فهد حمدان يوسف الحمدان",
+      "given": "فهد",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_hamdan_alhamdan",
+      "motherId": "p_maryam_alqaraawi",
+      "birth": { "year": 2014, "month": 1, "day": 20 }
+    },
+    "p_lamees_hamdan_2016": {
+      "fullName": "لميس حمدان يوسف الحمدان",
+      "given": "لميس",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_hamdan_alhamdan",
+      "motherId": "p_maryam_alqaraawi",
+      "birth": { "year": 2016, "month": 5, "day": 17 }
+    },
+    "p_faisal_hamdan_2021": {
+      "fullName": "فيصل حمدان يوسف الحمدان",
+      "given": "فيصل",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_hamdan_alhamdan",
+      "motherId": "p_maryam_alqaraawi",
+      "birth": { "year": 2021, "month": 12, "day": 1 }
+    },
+
+    "p_uthman_tariq_1976": {
+      "fullName": "عثمان طارق عثمان القصبي",
+      "given": "عثمان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_tariq_1951",
+      "motherId": "p_manal_alqasim",
+      "birth": { "year": 1976, "month": 1, "day": 1 },
+      "notes": "بكالوريوس إدارة الأعمال — جامعة الملك سعود. ماجستير في التسويق — الولايات المتحدة الأمريكية. زوجته آلاء بنت عبدالرحمن السويلم."
+    },
+    "p_alaa_alsuwailem": {
+      "fullName": "آلاء عبدالرحمن السويلم",
+      "given": "آلاء",
+      "family": "السويلم",
+      "gender": "female",
+      "fatherId": "p_abdulrahman_alsuwailem",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عثمان طارق عثمان القصبي."
+    },
+    "p_abdulrahman_alsuwailem": {
+      "fullName": "عبدالرحمن السويلم",
+      "given": "عبدالرحمن",
+      "family": "السويلم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد آلاء السويلم زوجة عثمان طارق القصبي."
+    },
+    "p_salman_uthman_1999": {
+      "fullName": "سلمان عثمان طارق القصبي",
+      "given": "سلمان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_tariq_1976",
+      "motherId": "p_alaa_alsuwailem",
+      "birth": { "year": 1999, "month": 2, "day": 11 },
+      "notes": "زوجته ريم بنت سامي الدريس."
+    },
+    "p_reem_aldreis": {
+      "fullName": "ريم سامي الدريس",
+      "given": "ريم",
+      "family": "الدريس",
+      "gender": "female",
+      "fatherId": "p_sami_aldreis",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة سلمان عثمان طارق القصبي."
+    },
+    "p_sami_aldreis": {
+      "fullName": "سامي الدريس",
+      "given": "سامي",
+      "family": "الدريس",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد ريم زوجة سلمان عثمان طارق القصبي."
+    },
+    "p_tariq_uthman_2004": {
+      "fullName": "طارق عثمان طارق القصبي",
+      "given": "طارق",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_tariq_1976",
+      "motherId": "p_alaa_alsuwailem",
+      "birth": { "year": 2004, "month": 9, "day": 5 }
+    },
+    "p_faisal_uthman_2007": {
+      "fullName": "فيصل عثمان طارق القصبي",
+      "given": "فيصل",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_tariq_1976",
+      "motherId": "p_alaa_alsuwailem",
+      "birth": { "year": 2007, "month": 11, "day": 16 }
+    },
+    "p_abdulrahman_uthman_2015": {
+      "fullName": "عبدالرحمن عثمان طارق القصبي",
+      "given": "عبدالرحمن",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_tariq_1976",
+      "motherId": "p_alaa_alsuwailem",
+      "birth": { "year": 2015, "month": 3, "day": 4 }
+    },
+
+    "p_manal_tariq_1979": {
+      "fullName": "منال طارق عثمان القصبي",
+      "given": "منال",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_tariq_1951",
+      "motherId": "p_manal_alqasim",
+      "birth": { "year": 1979, "month": 11, "day": 21 },
+      "notes": "بكالوريوس — كلية الدراسات الإسلامية، جامعة الأميرة نورة (سابقًا كلية التربية). ماجستير ودكتوراه في أصول الفقه. زوجها مصطفى عبدالله الحمدان."
+    },
+    "p_mustafa_alhamdan": {
+      "fullName": "مصطفى عبدالله الحمدان",
+      "given": "مصطفى",
+      "family": "الحمدان",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج منال طارق القصبي."
+    },
+    "p_shahd_mustafa_2000": {
+      "fullName": "شهد مصطفى عبدالله الحمدان",
+      "given": "شهد",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_mustafa_alhamdan",
+      "motherId": "p_manal_tariq_1979",
+      "birth": { "year": 2000, "month": 7, "day": 30 }
+    },
+    "p_osama_aldraihem": {
+      "fullName": "عمر أسامة الدريهم",
+      "given": "عمر",
+      "family": "الدريهم",
+      "gender": "male",
+      "fatherId": "p_osama_father_aldraihem",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج شهد بنت مصطفى الحمدان. والده أسامة الدريهم. (المعرّف \"p_osama_aldraihem\" قديم ويعود إلى التباس سابق في الاسم — تم تصحيح الاسم إلى عمر.)"
+    },
+    "p_osama_father_aldraihem": {
+      "fullName": "أسامة الدريهم",
+      "given": "أسامة",
+      "family": "الدريهم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد عمر الدريهم زوج شهد الحمدان. سُمّي حفيده أسامة على اسمه."
+    },
+    "p_osama_osama_2025": {
+      "fullName": "أسامة عمر أسامة الدريهم",
+      "given": "أسامة",
+      "family": "الدريهم",
+      "gender": "male",
+      "fatherId": "p_osama_aldraihem",
+      "motherId": "p_shahd_mustafa_2000",
+      "birth": { "year": 2025, "month": 3, "day": 23 },
+      "notes": "ابن عمر أسامة الدريهم وشهد مصطفى الحمدان. سُمّي على اسم جده."
+    },
+    "p_osama_mustafa_2003": {
+      "fullName": "أسامة مصطفى عبدالله الحمدان",
+      "given": "أسامة",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_mustafa_alhamdan",
+      "motherId": "p_manal_tariq_1979",
+      "birth": { "year": 2003, "month": 2, "day": 18 }
+    },
+    "p_abdullah_mustafa_2007": {
+      "fullName": "عبدالله مصطفى عبدالله الحمدان",
+      "given": "عبدالله",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_mustafa_alhamdan",
+      "motherId": "p_manal_tariq_1979",
+      "birth": { "year": 2007, "month": 4, "day": 1 }
+    },
+    "p_siham_mustafa_2009": {
+      "fullName": "سهام مصطفى عبدالله الحمدان",
+      "given": "سهام",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_mustafa_alhamdan",
+      "motherId": "p_manal_tariq_1979",
+      "birth": { "year": 2009, "month": 4, "day": 2 }
+    },
+    "p_munira_mustafa_2014": {
+      "fullName": "منيرة مصطفى عبدالله الحمدان",
+      "given": "منيرة",
+      "family": "الحمدان",
+      "gender": "female",
+      "fatherId": "p_mustafa_alhamdan",
+      "motherId": "p_manal_tariq_1979",
+      "birth": { "year": 2014, "month": 6, "day": 25 }
+    },
+    "p_tariq_mustafa_2017": {
+      "fullName": "طارق مصطفى عبدالله الحمدان",
+      "given": "طارق",
+      "family": "الحمدان",
+      "gender": "male",
+      "fatherId": "p_mustafa_alhamdan",
+      "motherId": "p_manal_tariq_1979",
+      "birth": { "year": 2017, "month": 6, "day": 16 }
+    },
+
+    "p_abdullah_tariq_1981": {
+      "fullName": "عبدالله طارق عثمان القصبي",
+      "given": "عبدالله",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_tariq_1951",
+      "motherId": "p_manal_alqasim",
+      "birth": { "year": 1981, "month": 1, "day": 1 },
+      "notes": "بكالوريوس إدارة الأعمال — جامعة الملك سعود. ماجستير إدارة الأعمال (MBA) — جامعة ميجيل، كندا. زوجته فاطمة بنت سليمان المديهيم."
+    },
+    "p_fatima_almudaihem": {
+      "fullName": "فاطمة سليمان المديهيم",
+      "given": "فاطمة",
+      "family": "المديهيم",
+      "gender": "female",
+      "fatherId": "p_suleiman_almudaihem",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبدالله طارق عثمان القصبي."
+    },
+    "p_suleiman_almudaihem": {
+      "fullName": "سليمان المديهيم",
+      "given": "سليمان",
+      "family": "المديهيم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد فاطمة المديهيم زوجة عبدالله طارق القصبي."
+    },
+    "p_lulu_almudaihem": {
+      "fullName": "لولو سليمان المديهيم",
+      "given": "لولو",
+      "family": "المديهيم",
+      "gender": "female",
+      "fatherId": "p_suleiman_almudaihem",
+      "external": true,
+      "isPlaceholder": false,
+      "notes": "زوجة بدر يوسف الحمدان وأم يوسف وسلمى وسليمان وعبدالعزيز. أخت فاطمة سليمان المديهيم (زوجة عبدالله طارق عثمان القصبي) — كلتاهما ابنتا سليمان المديهيم، فيلتقي فرعا أسماء وطارق القصبي عبر هذه القرابة. أرضعت أيضًا ثلاثة من القصبي: سعد عبدالله طارق القصبي ووليد محمد السويدان ونواف سعود الرقراق."
+    },
+    "p_alanoud_abdullah_2005": {
+      "fullName": "العنود عبدالله طارق القصبي",
+      "given": "العنود",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdullah_tariq_1981",
+      "motherId": "p_fatima_almudaihem",
+      "birth": { "year": 2005, "month": 8, "day": 20 }
+    },
+    "p_tariq_abdullah_2011": {
+      "fullName": "طارق عبدالله طارق القصبي",
+      "given": "طارق",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_tariq_1981",
+      "motherId": "p_fatima_almudaihem",
+      "birth": { "year": 2011, "month": 1, "day": 23 }
+    },
+    "p_mudawi_abdullah_2015": {
+      "fullName": "مضاوي عبدالله طارق القصبي",
+      "given": "مضاوي",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdullah_tariq_1981",
+      "motherId": "p_fatima_almudaihem",
+      "birth": { "year": 2015, "month": 10, "day": 16 }
+    },
+    "p_saad_abdullah_2015": {
+      "fullName": "سعد عبدالله طارق القصبي",
+      "given": "سعد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdullah_tariq_1981",
+      "motherId": "p_fatima_almudaihem",
+      "birth": { "year": 2015, "month": 10, "day": 16 }
+    },
+
+    "p_abeer_tariq_1991": {
+      "fullName": "عبير طارق عثمان القصبي",
+      "given": "عبير",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_tariq_1951",
+      "motherId": "p_manal_alqasim",
+      "birth": { "year": 1991, "month": 8, "day": 30 },
+      "notes": "بكالوريوس إدارة الأعمال — جامعة الإمام محمد بن سعود الإسلامية. ماجستير ودكتوراه في إدارة الأعمال — الولايات المتحدة الأمريكية. زوجها أنس إبراهيم التركي."
+    },
+    "p_anas_alturki": {
+      "fullName": "أنس إبراهيم التركي",
+      "given": "أنس",
+      "family": "التركي",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج عبير طارق القصبي."
+    },
+    "p_nour_anas_2017": {
+      "fullName": "نور أنس إبراهيم التركي",
+      "given": "نور",
+      "family": "التركي",
+      "gender": "female",
+      "fatherId": "p_anas_alturki",
+      "motherId": "p_abeer_tariq_1991",
+      "birth": { "year": 2017, "month": 2, "day": 18 }
+    },
+    "p_ibrahim_anas_2021": {
+      "fullName": "إبراهيم أنس إبراهيم التركي",
+      "given": "إبراهيم",
+      "family": "التركي",
+      "gender": "male",
+      "fatherId": "p_anas_alturki",
+      "motherId": "p_abeer_tariq_1991",
+      "birth": { "year": 2021, "month": 3, "day": 28 }
+    },
+    "p_salam_anas_2023": {
+      "fullName": "سلام أنس إبراهيم التركي",
+      "given": "سلام",
+      "family": "التركي",
+      "gender": "female",
+      "fatherId": "p_anas_alturki",
+      "motherId": "p_abeer_tariq_1991",
+      "birth": { "year": 2023, "month": 4, "day": 22 }
+    },
+
+    "p_aseel_tariq_1993": {
+      "fullName": "أسيل طارق عثمان القصبي",
+      "given": "أسيل",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_tariq_1951",
+      "motherId": "p_manal_alqasim",
+      "birth": { "year": 1993, "month": 4, "day": 3 },
+      "notes": "بكالوريوس — كلية الشريعة، جامعة الإمام محمد بن سعود الإسلامية. زوجها يوسف بن فؤاد إبراهيم جارالله الجارالله العامر."
+    },
+    "p_yusuf_alaamer": {
+      "fullName": "يوسف فؤاد إبراهيم جارالله الجارالله العامر",
+      "given": "يوسف",
+      "family": "الجارالله العامر",
+      "gender": "male",
+      "fatherId": "p_fuad_jarallah_aamer",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج أسيل طارق القصبي. تربطه بنسرين (والدة عبدالمحسن أحمد القصبي) قرابة عبر الجدّ المشترك جارالله الجارالله العامر — يوسف ابن ابن عم نسرين."
+    },
+    "p_alaa_yusuf_2021": {
+      "fullName": "آلاء يوسف فؤاد العامر",
+      "given": "آلاء",
+      "family": "العامر",
+      "gender": "female",
+      "fatherId": "p_yusuf_alaamer",
+      "motherId": "p_aseel_tariq_1993",
+      "birth": { "year": 2021, "month": 1, "day": 23 }
+    },
+    "p_muhannad_yusuf_2023": {
+      "fullName": "مهند يوسف فؤاد العامر",
+      "given": "مهند",
+      "family": "العامر",
+      "gender": "male",
+      "fatherId": "p_yusuf_alaamer",
+      "motherId": "p_aseel_tariq_1993",
+      "birth": { "year": 2023, "month": 8, "day": 31 }
+    },
+
+    "p_ahmed_tariq_1994": {
+      "fullName": "أحمد طارق عثمان القصبي",
+      "given": "أحمد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_tariq_1951",
+      "motherId": "p_manal_alqasim",
+      "birth": { "year": 1994, "month": 12, "day": 7 },
+      "events": [
+        { "year": 2025, "label": "تزوّج من فرح عبدالله بن مسعود في ٢١/١/٢٠٢٥م" }
+      ],
+      "notes": "بكالوريوس إدارة الأعمال — جامعة دار العلوم. زوجته فرح بنت عبدالله بن مسعود (تزوّجها في ٢١/١/٢٠٢٥م). (كتاب العائلة يذكر مولده ١٩٩٥م تقريبًا، والتاريخ التفصيلي ٧/١٢/١٩٩٤م.)"
+    },
+    "p_farah_binmasud": {
+      "fullName": "فرح عبدالله بن مسعود",
+      "given": "فرح",
+      "family": "بن مسعود",
+      "gender": "female",
+      "fatherId": "p_abdullah_binmasud",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة أحمد طارق عثمان القصبي."
+    },
+    "p_abdullah_binmasud": {
+      "fullName": "عبدالله بن مسعود",
+      "given": "عبدالله",
+      "family": "بن مسعود",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد فرح زوجة أحمد طارق القصبي."
+    },
+    "p_aljawhara_ahmed_tariq": {
+      "fullName": "الجوهرة أحمد طارق القصبي",
+      "given": "الجوهرة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_ahmed_tariq_1994",
+      "motherId": "p_farah_binmasud"
+    },
+
+    "p_mashael_qasim": {
+      "fullName": "مشاعل قاسم عثمان القصبي",
+      "given": "مشاعل",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_qasim_1952",
+      "motherId": "p_aliaa_almuhaidib"
+    },
+    "p_saba_qasim_1985": {
+      "fullName": "صبا قاسم عثمان القصبي",
+      "given": "صبا",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_qasim_1952",
+      "motherId": "p_aliaa_almuhaidib",
+      "birth": { "year": 1985 }
+    },
+    "p_nada_qasim": {
+      "fullName": "ندى قاسم عثمان القصبي",
+      "given": "ندى",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_qasim_1952",
+      "motherId": "p_aliaa_almuhaidib"
+    },
+    "p_abdulaziz_qasim_1992": {
+      "fullName": "عبدالعزيز قاسم عثمان القصبي",
+      "given": "عبدالعزيز",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_qasim_1952",
+      "motherId": "p_aliaa_almuhaidib",
+      "birth": { "year": 1992 }
+    },
+    "p_hala_qasim": {
+      "fullName": "هلا قاسم عثمان القصبي",
+      "given": "هلا",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_qasim_1952",
+      "motherId": "p_aliaa_almuhaidib"
+    },
+
+    "p_sara_alrushud_1978": {
+      "fullName": "سارة طارق عبدالمحسن الرشود",
+      "given": "سارة",
+      "family": "الرشود",
+      "gender": "female",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1978, "month": 11, "day": 30 }
+    },
+    "p_imad_alsharia": {
+      "fullName": "عماد محمد الشريع",
+      "given": "عماد",
+      "family": "الشريع",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج سارة طارق الرشود."
+    },
+    "p_yara_imad": {
+      "fullName": "يارا عماد محمد الشريع",
+      "given": "يارا",
+      "family": "الشريع",
+      "gender": "female",
+      "fatherId": "p_imad_alsharia",
+      "motherId": "p_sara_alrushud_1978",
+      "birth": { "year": 2000, "month": 8, "day": 12 }
+    },
+    "p_bader_imad": {
+      "fullName": "بدر عماد محمد الشريع",
+      "given": "بدر",
+      "family": "الشريع",
+      "gender": "male",
+      "fatherId": "p_imad_alsharia",
+      "motherId": "p_sara_alrushud_1978",
+      "birth": { "year": 2003, "month": 11, "day": 28 }
+    },
+    "p_wad_imad": {
+      "fullName": "ود عماد محمد الشريع",
+      "given": "ود",
+      "family": "الشريع",
+      "gender": "female",
+      "fatherId": "p_imad_alsharia",
+      "motherId": "p_sara_alrushud_1978",
+      "birth": { "year": 2007, "month": 8, "day": 25 }
+    },
+    "p_deema_imad": {
+      "fullName": "ديما عماد محمد الشريع",
+      "given": "ديما",
+      "family": "الشريع",
+      "gender": "female",
+      "fatherId": "p_imad_alsharia",
+      "motherId": "p_sara_alrushud_1978",
+      "birth": { "year": 2013, "month": 3, "day": 13 },
+      "notes": "توأم مع ريما الشريع."
+    },
+    "p_reema_imad": {
+      "fullName": "ريما عماد محمد الشريع",
+      "given": "ريما",
+      "family": "الشريع",
+      "gender": "female",
+      "fatherId": "p_imad_alsharia",
+      "motherId": "p_sara_alrushud_1978",
+      "birth": { "year": 2013, "month": 3, "day": 13 },
+      "notes": "توأم مع ديما الشريع."
+    },
+
+    "p_yusuf_alrushud_1980": {
+      "fullName": "يوسف طارق عبدالمحسن الرشود",
+      "given": "يوسف",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1980, "month": 11, "day": 9 }
+    },
+    "p_toraf_yusuf": {
+      "fullName": "ترف يوسف طارق الرشود",
+      "given": "ترف",
+      "family": "الرشود",
+      "gender": "female",
+      "fatherId": "p_yusuf_alrushud_1980",
+      "motherId": "p_bilqis_alqudaib",
+      "birth": { "year": 2017, "month": 3, "day": 14 }
+    },
+    "p_saif_yusuf": {
+      "fullName": "سيف يوسف طارق الرشود",
+      "given": "سيف",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_yusuf_alrushud_1980",
+      "motherId": null
+    },
+
+    "p_ibrahim_alrushud_1982": {
+      "fullName": "إبراهيم طارق عبدالمحسن الرشود",
+      "given": "إبراهيم",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1982, "month": 9, "day": 24 }
+    },
+    "p_fai_ibrahim": {
+      "fullName": "في إبراهيم طارق الرشود",
+      "given": "في",
+      "family": "الرشود",
+      "gender": "female",
+      "fatherId": "p_ibrahim_alrushud_1982",
+      "motherId": "p_nawf_almazroua",
+      "birth": { "year": 2008, "month": 6, "day": 20 }
+    },
+    "p_misaad_ibrahim": {
+      "fullName": "مساعد إبراهيم طارق الرشود",
+      "given": "مساعد",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_ibrahim_alrushud_1982",
+      "motherId": "p_nawf_almazroua",
+      "birth": { "year": 2014, "month": 3, "day": 1 }
+    },
+
+    "p_haya_alrushud_1985": {
+      "fullName": "هيا طارق عبدالمحسن الرشود",
+      "given": "هيا",
+      "family": "الرشود",
+      "gender": "female",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1985, "month": 2, "day": 1 }
+    },
+    "p_anas_alshuwaier": {
+      "fullName": "أنس علي الشويعر",
+      "given": "أنس",
+      "family": "الشويعر",
+      "fatherId": "p_ali_alshuwaier",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج هيا طارق الرشود. (المعرّف \"p_anas_alshuwaier\" قديم — كان الاسم مسجَّلًا خطأً \"علي الشويعر\" وتم تصحيحه إلى أنس بحسب الاسم الأبوي لأبنائه.)"
+    },
+    "p_ali_alshuwaier": {
+      "fullName": "علي الشويعر",
+      "given": "علي",
+      "family": "الشويعر",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد أنس الشويعر زوج هيا طارق الرشود."
+    },
+    "p_saba_anas_alshuwaier": {
+      "fullName": "صبا أنس علي الشويعر",
+      "given": "صبا",
+      "family": "الشويعر",
+      "gender": "female",
+      "fatherId": "p_anas_alshuwaier",
+      "motherId": "p_haya_alrushud_1985",
+      "birth": { "year": 2007, "month": 2, "day": 7 }
+    },
+    "p_layla_anas_alshuwaier": {
+      "fullName": "ليلى أنس علي الشويعر",
+      "given": "ليلى",
+      "family": "الشويعر",
+      "gender": "female",
+      "fatherId": "p_anas_alshuwaier",
+      "motherId": "p_haya_alrushud_1985",
+      "birth": { "year": 2008, "month": 6, "day": 18 }
+    },
+
+    "p_saleh_alrushud_1987": {
+      "fullName": "صالح طارق عبدالمحسن الرشود",
+      "given": "صالح",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1987 }
+    },
+    "p_saad_saleh": {
+      "fullName": "سعد صالح طارق الرشود",
+      "given": "سعد",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_saleh_alrushud_1987",
+      "motherId": null
+    },
+    "p_layla_saleh": {
+      "fullName": "ليلى صالح طارق الرشود",
+      "given": "ليلى",
+      "family": "الرشود",
+      "gender": "female",
+      "fatherId": "p_saleh_alrushud_1987",
+      "motherId": null
+    },
+
+    "p_abdullah_alrushud_1989": {
+      "fullName": "عبدالله طارق عبدالمحسن الرشود",
+      "given": "عبدالله",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1989, "month": 11, "day": 24 }
+    },
+    "p_naila_alrushud_1993": {
+      "fullName": "نائلة طارق عبدالمحسن الرشود",
+      "given": "نائلة",
+      "family": "الرشود",
+      "gender": "female",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1993, "month": 4, "day": 5 }
+    },
+    "p_salman_alrushud_1997": {
+      "fullName": "سلمان طارق عبدالمحسن الرشود",
+      "given": "سلمان",
+      "family": "الرشود",
+      "gender": "male",
+      "fatherId": "p_tariq_alrushud",
+      "motherId": "p_khawla_1955",
+      "birth": { "year": 1997, "month": 6, "day": 15 }
+    },
+
+    "p_saja_khalid_1981": {
+      "fullName": "سجى خالد عثمان القصبي",
+      "given": "سجى",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_khalid_1957",
+      "motherId": "p_muna_mohammed_qassabi",
+      "birth": { "year": 1981, "month": 7, "day": 24 }
+    },
+    "p_uthman_khalid_1984": {
+      "fullName": "عثمان خالد عثمان القصبي",
+      "given": "عثمان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_khalid_1957",
+      "motherId": "p_muna_mohammed_qassabi",
+      "birth": { "year": 1984, "month": 6, "day": 16 }
+    },
+    "p_dana_khalid_1986": {
+      "fullName": "دانة خالد عثمان القصبي",
+      "given": "دانة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_khalid_1957",
+      "motherId": "p_muna_mohammed_qassabi",
+      "birth": { "year": 1986, "month": 5, "day": 28 }
+    },
+    "p_muthana_khalid_1990": {
+      "fullName": "مثنى خالد عثمان القصبي",
+      "given": "مثنى",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_khalid_1957",
+      "motherId": "p_muna_mohammed_qassabi",
+      "birth": { "year": 1990, "month": 6, "day": 27 }
+    },
+    "p_bader_khalid_1993": {
+      "fullName": "بدر خالد عثمان القصبي",
+      "given": "بدر",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_khalid_1957",
+      "motherId": "p_muna_mohammed_qassabi",
+      "birth": { "year": 1993, "month": 4, "day": 9 }
+    },
+    "p_sultan_khalid_1998": {
+      "fullName": "سلطان خالد عثمان القصبي",
+      "given": "سلطان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_khalid_1957",
+      "motherId": "p_muna_mohammed_qassabi",
+      "birth": { "year": 1998, "month": 3, "day": 4 }
+    },
+
+    "p_abdulrahman_ahmed_1985": {
+      "fullName": "عبدالرحمن أحمد عثمان القصبي",
+      "given": "عبدالرحمن",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_ahmed_1960",
+      "motherId": "p_nasrin_jarallah_aamer",
+      "birth": { "year": 1985, "month": 12, "day": 26 },
+      "events": [
+        { "year": 2022, "month": 1, "day": 26, "label": "تخرّج بشهادة الماجستير في دراسات الترجمة من جامعة كارديف (٢٦/١/٢٠٢٢م)" }
+      ]
+    },
+    "p_aliaa_abdulrahman_2017": {
+      "fullName": "علياء عبدالرحمن أحمد القصبي",
+      "given": "علياء",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdulrahman_ahmed_1985",
+      "motherId": "p_malak_alhaqil",
+      "birth": { "year": 2017, "month": 3, "day": 11 }
+    },
+    "p_aljawhara_abdulrahman_2022": {
+      "fullName": "الجوهرة عبدالرحمن أحمد القصبي",
+      "given": "الجوهرة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdulrahman_ahmed_1985",
+      "motherId": "p_malak_alhaqil",
+      "birth": { "year": 2022, "month": 7, "day": 1 }
+    },
+    "p_hadeel_ahmed_1989": {
+      "fullName": "هديل أحمد عثمان القصبي",
+      "given": "هديل",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_ahmed_1960",
+      "motherId": "p_nasrin_jarallah_aamer",
+      "birth": { "year": 1989, "month": 7, "day": 15 },
+      "events": [
+        { "year": 2021, "label": "تخرّجت بشهادة الماجستير في إدارة الهندسة من جامعة الأمير سلطان (٢٠٢١م)" }
+      ]
+    },
+    "p_mohammed_aljamaz": {
+      "fullName": "محمد خالد محمد إبراهيم الجماز",
+      "given": "محمد",
+      "family": "الجماز",
+      "tribe": "بني زيد",
+      "fatherId": "p_khalid_aljamaz",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج هديل أحمد القصبي. من بني زيد. أبوه خالد، جدّه محمد، جدّ أبيه إبراهيم الجماز."
+    },
+    "p_khalid_aljamaz": {
+      "fullName": "خالد محمد إبراهيم الجماز",
+      "given": "خالد",
+      "family": "الجماز",
+      "tribe": "بني زيد",
+      "fatherId": "p_mohammed_jamaz_grandfather",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد محمد الجماز زوج هديل أحمد القصبي. من بني زيد. سُمّي حفيده خالد على اسمه."
+    },
+    "p_mohammed_jamaz_grandfather": {
+      "fullName": "محمد إبراهيم الجماز",
+      "given": "محمد",
+      "family": "الجماز",
+      "tribe": "بني زيد",
+      "fatherId": "p_ibrahim_aljamaz",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جدّ محمد الجماز زوج هديل أحمد القصبي. من بني زيد."
+    },
+    "p_ibrahim_aljamaz": {
+      "fullName": "إبراهيم الجماز",
+      "given": "إبراهيم",
+      "family": "الجماز",
+      "tribe": "بني زيد",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جدّ أب محمد الجماز زوج هديل أحمد القصبي. من بني زيد."
+    },
+    "p_khalid_mohammed_2016": {
+      "fullName": "خالد محمد خالد الجماز",
+      "given": "خالد",
+      "family": "الجماز",
+      "gender": "male",
+      "fatherId": "p_mohammed_aljamaz",
+      "motherId": "p_hadeel_ahmed_1989",
+      "birth": { "year": 2016, "month": 1, "day": 31 }
+    },
+    "p_dalal_mohammed_2019": {
+      "fullName": "دلال محمد خالد الجماز",
+      "given": "دلال",
+      "family": "الجماز",
+      "gender": "female",
+      "fatherId": "p_mohammed_aljamaz",
+      "motherId": "p_hadeel_ahmed_1989",
+      "birth": { "year": 2019, "month": 11, "day": 6 }
+    },
+    "p_mudawi_mohammed_2021": {
+      "fullName": "مضاوي محمد خالد الجماز",
+      "given": "مضاوي",
+      "family": "الجماز",
+      "gender": "female",
+      "fatherId": "p_mohammed_aljamaz",
+      "motherId": "p_hadeel_ahmed_1989",
+      "birth": { "year": 2021, "month": 7, "day": 20 }
+    },
+    "p_abdulmuhsin_ahmed_1991": {
+      "fullName": "عبدالمحسن أحمد عثمان القصبي",
+      "given": "عبدالمحسن",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_ahmed_1960",
+      "motherId": "p_nasrin_jarallah_aamer",
+      "birth": { "year": 1991, "month": 1, "day": 7 }
+    },
+
+    "p_nasrin_jarallah_aamer": {
+      "fullName": "نسرين عبدالمحسن جارالله الجارالله العامر",
+      "given": "نسرين",
+      "family": "الجارالله العامر",
+      "gender": "female",
+      "fatherId": "p_abdulmuhsin_jarallah_aamer",
+      "motherId": null,
+      "external": true,
+      "notes": "زوجة أحمد عثمان القصبي، ووالدة عبدالرحمن وهديل وعبدالمحسن وهالة ولولوة."
+    },
+    "p_abdulmuhsin_jarallah_aamer": {
+      "fullName": "عبدالمحسن جارالله الجارالله العامر",
+      "given": "عبدالمحسن",
+      "family": "الجارالله العامر",
+      "gender": "male",
+      "fatherId": "p_jarallah_jarallah_aamer",
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد نسرين، وأخو إبراهيم جارالله الجارالله العامر (جد يوسف زوج أسيل القصبي)."
+    },
+    "p_jarallah_jarallah_aamer": {
+      "fullName": "جارالله الجارالله العامر",
+      "given": "جارالله",
+      "family": "الجارالله العامر",
+      "gender": "male",
+      "fatherId": null,
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "الجد المشترك. من أبنائه: عبدالمحسن (والد نسرين زوجة أحمد القصبي) وإبراهيم (جد يوسف زوج أسيل القصبي). يوسف ابن ابن عم نسرين."
+    },
+    "p_ibrahim_jarallah_aamer": {
+      "fullName": "إبراهيم جارالله الجارالله العامر",
+      "given": "إبراهيم",
+      "family": "الجارالله العامر",
+      "gender": "male",
+      "fatherId": "p_jarallah_jarallah_aamer",
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جد يوسف زوج أسيل القصبي، وأخو عبدالمحسن جارالله الجارالله العامر (والد نسرين). أبناؤه ثلاثة إخوة: فؤاد (والد يوسف زوج أسيل القصبي)، وفوزي (والد زوجة ناصر محمد القصبي)، وفريد."
+    },
+    "p_fawzi_jarallah_aamer": {
+      "fullName": "فوزي إبراهيم جارالله الجارالله العامر",
+      "given": "فوزي",
+      "family": "الجارالله العامر",
+      "gender": "male",
+      "fatherId": "p_ibrahim_jarallah_aamer",
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "أبو زوجة ناصر محمد عثمان القصبي. أخواه فؤاد (والد يوسف زوج أسيل القصبي) وفريد."
+    },
+    "p_farid_jarallah_aamer": {
+      "fullName": "فريد إبراهيم جارالله الجارالله العامر",
+      "given": "فريد",
+      "family": "الجارالله العامر",
+      "gender": "male",
+      "fatherId": "p_ibrahim_jarallah_aamer",
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "أخو فؤاد (والد يوسف زوج أسيل القصبي) وفوزي (والد زوجة ناصر محمد القصبي)."
+    },
+    "p_unnamed_fawzi_daughter": {
+      "fullName": "حنان فوزي إبراهيم الجارالله العامر",
+      "given": "حنان",
+      "family": "الجارالله العامر",
+      "gender": "female",
+      "fatherId": "p_fawzi_jarallah_aamer",
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": false,
+      "notes": "زوجة ناصر محمد عثمان القصبي وأم سارة وريم ومحمد ورنا. والدها فوزي إبراهيم جارالله الجارالله العامر — وبهذا تربط هذه القرابة بين ناصر القصبي وأسرة العامر التي تنتسب إليها كذلك نسرين (والدة عبدالمحسن أحمد القصبي) ويوسف (زوج أسيل طارق القصبي)."
+    },
+    "p_fuad_jarallah_aamer": {
+      "fullName": "فؤاد إبراهيم جارالله الجارالله العامر",
+      "given": "فؤاد",
+      "family": "الجارالله العامر",
+      "gender": "male",
+      "fatherId": "p_ibrahim_jarallah_aamer",
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد يوسف العامر زوج أسيل القصبي. أخوه فوزي (والد زوجة ناصر محمد القصبي) وفريد. ابن عم عبدالمحسن جارالله الجارالله العامر (والد نسرين)."
+    },
+
+    "p_dana_alfawaz": {
+      "fullName": "دانة إبراهيم محمد الفواز",
+      "given": "دانة",
+      "family": "الفواز",
+      "gender": "female",
+      "fatherId": "p_ibrahim_alfawaz",
+      "motherId": "p_sharifa_alfawaz",
+      "external": true,
+      "birth": { "year": 1992, "month": 9, "day": 16 },
+      "notes": "زوجة عبدالمحسن أحمد عثمان القصبي. أمها شريفة عبدالرحمن الفواز (من نفس عائلة الفواز — قد تكون قرابة)."
+    },
+    "p_sharifa_alfawaz": {
+      "fullName": "شريفة عبدالرحمن الفواز",
+      "given": "شريفة",
+      "family": "الفواز",
+      "gender": "female",
+      "fatherId": "p_abdulrahman_alfawaz",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "أم دانة الفواز (زوجة عبدالمحسن أحمد القصبي). من عائلة الفواز نفسها مثل زوجها إبراهيم محمد الفواز — قد تكون قرابة بينهما."
+    },
+    "p_abdulrahman_alfawaz": {
+      "fullName": "عبدالرحمن الفواز",
+      "given": "عبدالرحمن",
+      "family": "الفواز",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد شريفة الفواز (أم دانة)."
+    },
+    "p_ibrahim_alfawaz": {
+      "fullName": "إبراهيم محمد الفواز",
+      "given": "إبراهيم",
+      "family": "الفواز",
+      "gender": "male",
+      "fatherId": "p_mohammed_alfawaz",
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد دانة."
+    },
+    "p_mohammed_alfawaz": {
+      "fullName": "محمد الفواز",
+      "given": "محمد",
+      "family": "الفواز",
+      "gender": "male",
+      "fatherId": null,
+      "motherId": null,
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "جد دانة."
+    },
+    "p_hala_ahmed_1996": {
+      "fullName": "هالة أحمد عثمان القصبي",
+      "given": "هالة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_ahmed_1960",
+      "motherId": "p_nasrin_jarallah_aamer",
+      "birth": { "year": 1996, "month": 7, "day": 11 },
+      "notes": "زوجها أحمد بن خالد الفقيه. أنجبت منه خالد (٧/١/٢٠٢٦م)."
+    },
+    "p_ahmed_alfaqih": {
+      "fullName": "أحمد خالد الفقيه العنقري",
+      "given": "أحمد",
+      "family": "الفقيه العنقري",
+      "tribe": "عناقر من سدير",
+      "fatherId": "p_khalid_alfaqih",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج هالة أحمد عثمان القصبي. ابن خالد الفقيه — وعمته خولة الفقيه العنقري (زوجة محمد عثمان القصبي)، عمّ هالة الكبير. أي أن زواج هالة من أحمد ربط القصبي بفرع الفقيه عبر مساري قرابة: خولة كزوجة عم هالة، وأحمد ابن أخيها."
+    },
+    "p_khalid_alfaqih": {
+      "fullName": "خالد الفقيه العنقري",
+      "given": "خالد",
+      "family": "الفقيه العنقري",
+      "tribe": "عناقر من سدير",
+      "fatherId": "p_alfaqih_alanqari_patriarch",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد أحمد الفقيه زوج هالة أحمد القصبي. أخو خولة الفقيه العنقري (زوجة محمد عثمان القصبي) — أي أن خولة عمة أحمد. سُمّي حفيده خالد على اسمه."
+    },
+    "p_khalid_ahmed_2026": {
+      "fullName": "خالد أحمد خالد الفقيه العنقري",
+      "given": "خالد",
+      "family": "الفقيه العنقري",
+      "tribe": "عناقر من سدير",
+      "gender": "male",
+      "fatherId": "p_ahmed_alfaqih",
+      "motherId": "p_hala_ahmed_1996",
+      "birth": { "year": 2026, "month": 1, "day": 7 },
+      "notes": "ابن هالة أحمد القصبي وأحمد خالد الفقيه العنقري. سُمّي على اسم جده خالد الفقيه. ينحدر من فرع الفقيه العنقري الذي تنتمي إليه أيضًا خولة الفقيه العنقري (زوجة محمد عثمان القصبي وعمة أبيه أحمد)."
+    },
+    "p_lulwah_ahmed_2002": {
+      "fullName": "لولوة أحمد عثمان القصبي",
+      "given": "لولوة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_ahmed_1960",
+      "motherId": "p_nasrin_jarallah_aamer",
+      "birth": { "year": 2002, "month": 6, "day": 24 }
+    },
+
+    "p_suleiman_almushrif_1986": {
+      "fullName": "سليمان عبدالرزاق عبدالكريم المشرف",
+      "given": "سليمان",
+      "family": "المشرف",
+      "gender": "male",
+      "fatherId": "p_abdulrazaq_almushrif",
+      "motherId": "p_salwa_1962",
+      "birth": { "year": 1986 }
+    },
+    "p_fatima_almushrif_1987": {
+      "fullName": "فاطمة عبدالرزاق عبدالكريم المشرف",
+      "given": "فاطمة",
+      "family": "المشرف",
+      "gender": "female",
+      "fatherId": "p_abdulrazaq_almushrif",
+      "motherId": "p_salwa_1962",
+      "birth": { "year": 1987 }
+    },
+    "p_omar_almushrif_1990": {
+      "fullName": "عمر عبدالرزاق عبدالكريم المشرف",
+      "given": "عمر",
+      "family": "المشرف",
+      "gender": "male",
+      "fatherId": "p_abdulrazaq_almushrif",
+      "motherId": "p_salwa_1962",
+      "birth": { "year": 1990, "month": 3, "day": 4 }
+    },
+    "p_abdulaziz_omar_2019": {
+      "fullName": "عبدالعزيز عمر عبدالرزاق المشرف",
+      "given": "عبدالعزيز",
+      "family": "المشرف",
+      "gender": "male",
+      "fatherId": "p_omar_almushrif_1990",
+      "motherId": "p_fatima_alfurayh",
+      "birth": { "year": 2019, "month": 9, "day": 11 }
+    },
+    "p_wasan_omar_2021": {
+      "fullName": "وسن عمر عبدالرزاق المشرف",
+      "given": "وسن",
+      "family": "المشرف",
+      "gender": "female",
+      "fatherId": "p_omar_almushrif_1990",
+      "motherId": "p_fatima_alfurayh",
+      "birth": { "year": 2021, "month": 8, "day": 18 }
+    },
+    "p_ward_omar_2023": {
+      "fullName": "ورد عمر عبدالرزاق المشرف",
+      "given": "ورد",
+      "family": "المشرف",
+      "gender": "female",
+      "fatherId": "p_omar_almushrif_1990",
+      "motherId": "p_fatima_alfurayh",
+      "birth": { "year": 2023, "month": 8, "day": 27 }
+    },
+    "p_saad_almushrif": {
+      "fullName": "سعد عبدالرزاق عبدالكريم المشرف",
+      "given": "سعد",
+      "family": "المشرف",
+      "gender": "male",
+      "fatherId": "p_abdulrazaq_almushrif",
+      "motherId": "p_salwa_1962",
+      "birth": { "year": 1992, "month": 11, "day": 12 }
+    },
+    "p_naif_almushrif": {
+      "fullName": "نايف عبدالرزاق عبدالكريم المشرف",
+      "given": "نايف",
+      "family": "المشرف",
+      "gender": "male",
+      "fatherId": "p_abdulrazaq_almushrif",
+      "motherId": "p_salwa_1962",
+      "birth": { "year": 1996 }
+    },
+    "p_reem_almushrif": {
+      "fullName": "ريم عبدالرزاق عبدالكريم المشرف",
+      "given": "ريم",
+      "family": "المشرف",
+      "gender": "female",
+      "fatherId": "p_abdulrazaq_almushrif",
+      "motherId": "p_salwa_1962",
+      "notes": "متزوّجة من رجل من عائلة الشايع — أهل رياض الخبراء. (اسمه الأول غير موثّق بعد.)"
+    },
+    "p_reem_mushrif_husband_shayie": {
+      "fullName": "خالد إبراهيم الشايع",
+      "given": "خالد",
+      "family": "الشايع",
+      "fatherId": "p_ibrahim_alshayie",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج ريم عبدالرزاق المشرف. من عائلة الشايع أهل رياض الخبراء."
+    },
+    "p_ibrahim_alshayie": {
+      "fullName": "إبراهيم الشايع",
+      "given": "إبراهيم",
+      "family": "الشايع",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد خالد الشايع زوج ريم المشرف. من عائلة الشايع أهل رياض الخبراء."
+    },
+    "p_yusuf_almushrif": {
+      "fullName": "يوسف عبدالرزاق عبدالكريم المشرف",
+      "given": "يوسف",
+      "family": "المشرف",
+      "gender": "male",
+      "fatherId": "p_abdulrazaq_almushrif",
+      "motherId": "p_salwa_1962"
+    },
+
+    "p_arwa_saad_1990": {
+      "fullName": "أروى سعد عثمان القصبي",
+      "given": "أروى",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_saad_1966",
+      "motherId": "p_rasha_alsuwailem",
+      "birth": { "year": 1990 }
+    },
+    "p_noura_saad_1992": {
+      "fullName": "نورة سعد عثمان القصبي",
+      "given": "نورة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_saad_1966",
+      "motherId": "p_rasha_alsuwailem",
+      "birth": { "year": 1992, "month": 2, "day": 6 }
+    },
+    "p_rawan_saad_1994": {
+      "fullName": "روان سعد عثمان القصبي",
+      "given": "روان",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_saad_1966",
+      "motherId": "p_rasha_alsuwailem",
+      "birth": { "year": 1994, "month": 9 }
+    },
+    "p_asma_saad_1997": {
+      "fullName": "أسماء سعد عثمان القصبي",
+      "given": "أسماء",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_saad_1966",
+      "motherId": "p_rasha_alsuwailem",
+      "birth": { "year": 1997, "month": 10 }
+    },
+    "p_mohammed_saad_2001": {
+      "fullName": "محمد سعد عثمان القصبي",
+      "given": "محمد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_saad_1966",
+      "motherId": "p_rasha_alsuwailem",
+      "birth": { "year": 2001, "month": 9 }
+    },
+    "p_deema_saad_2005": {
+      "fullName": "ديمة سعد عثمان القصبي",
+      "given": "ديمة",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_saad_1966",
+      "motherId": "p_rasha_alsuwailem",
+      "birth": { "year": 2005, "month": 5 }
+    },
+
+    "p_rasha_alsuwailem": {
+      "fullName": "رشا السويلم",
+      "given": "رشا",
+      "family": "السويلم",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة سعد عثمان القصبي. أم أروى ونورة وروان وأسماء ومحمد وديمة."
+    },
+
+    "p_abdulaziz_alrayyes": {
+      "fullName": "عبدالعزيز عبدالحميد الريس",
+      "given": "عبدالعزيز",
+      "family": "الريس",
+      "fatherId": "p_abdulhamid_alrayyes",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج أروى سعد القصبي. أبو عمر وسعد ويوسف. والده عبدالحميد الريس."
+    },
+    "p_abdulhamid_alrayyes": {
+      "fullName": "عبدالحميد الريس",
+      "given": "عبدالحميد",
+      "family": "الريس",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد عبدالعزيز الريس زوج أروى سعد القصبي."
+    },
+    "p_omar_alrayyes_2010": {
+      "fullName": "عمر عبدالعزيز الريّس",
+      "given": "عمر",
+      "family": "الريّس",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_alrayyes",
+      "motherId": "p_arwa_saad_1990",
+      "birth": { "year": 2010, "approximate": true }
+    },
+    "p_saad_alrayyes_2017": {
+      "fullName": "سعد عبدالعزيز الريّس",
+      "given": "سعد",
+      "family": "الريّس",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_alrayyes",
+      "motherId": "p_arwa_saad_1990",
+      "birth": { "year": 2017, "approximate": true }
+    },
+    "p_yusuf_alrayyes_2019": {
+      "fullName": "يوسف عبدالعزيز الريّس",
+      "given": "يوسف",
+      "family": "الريّس",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_alrayyes",
+      "motherId": "p_arwa_saad_1990",
+      "birth": { "year": 2019, "approximate": true }
+    },
+
+    "p_muadh_alrashed": {
+      "fullName": "معاذ الراشد",
+      "given": "معاذ",
+      "family": "الراشد",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج نورة سعد القصبي. أبو متهنّى وعبدالعزيز."
+    },
+    "p_muthanna_alrashed_2018": {
+      "fullName": "متهنّى معاذ الراشد",
+      "given": "متهنّى",
+      "family": "الراشد",
+      "gender": "female",
+      "fatherId": "p_muadh_alrashed",
+      "motherId": "p_noura_saad_1992",
+      "birth": { "year": 2018, "approximate": true }
+    },
+    "p_abdulaziz_alrashed_2020": {
+      "fullName": "عبدالعزيز معاذ الراشد",
+      "given": "عبدالعزيز",
+      "family": "الراشد",
+      "gender": "male",
+      "fatherId": "p_muadh_alrashed",
+      "motherId": "p_noura_saad_1992",
+      "birth": { "year": 2020, "approximate": true }
+    },
+
+    "p_omar_alqasim": {
+      "fullName": "عمر فهد القاسم",
+      "given": "عمر",
+      "family": "القاسم",
+      "fatherId": "p_fahd_alqasim_father",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج روان سعد القصبي. أبو لولو وفهد. والده فهد القاسم — وحفيده فهد سُمّي على اسم جدّه."
+    },
+    "p_fahd_alqasim_father": {
+      "fullName": "فهد القاسم",
+      "given": "فهد",
+      "family": "القاسم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "والد عمر القاسم زوج روان سعد القصبي. سُمّي حفيده فهد على اسمه."
+    },
+    "p_lulu_alqasim_2020": {
+      "fullName": "لولو عمر القاسم",
+      "given": "لولو",
+      "family": "القاسم",
+      "gender": "female",
+      "fatherId": "p_omar_alqasim",
+      "motherId": "p_rawan_saad_1994",
+      "birth": { "year": 2020, "approximate": true }
+    },
+    "p_fahd_alqasim_2026": {
+      "fullName": "فهد عمر القاسم",
+      "given": "فهد",
+      "family": "القاسم",
+      "gender": "male",
+      "fatherId": "p_omar_alqasim",
+      "motherId": "p_rawan_saad_1994",
+      "birth": { "year": 2026, "approximate": true }
+    },
+
+    "p_khulood_abateen": {
+      "fullName": "خلود أبابطين",
+      "given": "خلود",
+      "family": "أبابطين",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة وليد خالد البلالي. أم خالد وهند وعبدالله."
+    },
+    "p_khalid_walid_albalali": {
+      "fullName": "خالد وليد البلالي",
+      "given": "خالد",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_walid_albalali",
+      "motherId": "p_khulood_abateen",
+      "birth": { "year": 1993, "approximate": true }
+    },
+    "p_hind_walid_albalali": {
+      "fullName": "هند وليد البلالي",
+      "given": "هند",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_walid_albalali",
+      "motherId": "p_khulood_abateen",
+      "birth": { "year": 1996, "approximate": true }
+    },
+    "p_abdullah_walid_albalali": {
+      "fullName": "عبدالله وليد البلالي",
+      "given": "عبدالله",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_walid_albalali",
+      "motherId": "p_khulood_abateen",
+      "birth": { "year": 1999, "approximate": true }
+    },
+
+    "p_aseel_abuhumaid": {
+      "fullName": "أسيل أبو حيمد",
+      "given": "أسيل",
+      "family": "أبو حيمد",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبداللطيف خالد البلالي. أم خالد ولما وديم وتركي."
+    },
+    "p_khalid_abdullatif_albalali": {
+      "fullName": "خالد عبداللطيف البلالي",
+      "given": "خالد",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_abdullatif_albalali",
+      "motherId": "p_aseel_abuhumaid",
+      "birth": { "year": 2003, "approximate": true }
+    },
+    "p_lama_abdullatif_albalali": {
+      "fullName": "لما عبداللطيف البلالي",
+      "given": "لما",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_abdullatif_albalali",
+      "motherId": "p_aseel_abuhumaid",
+      "birth": { "year": 2005, "approximate": true }
+    },
+    "p_deem_abdullatif_albalali": {
+      "fullName": "ديم عبداللطيف البلالي",
+      "given": "ديم",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_abdullatif_albalali",
+      "motherId": "p_aseel_abuhumaid",
+      "birth": { "year": 2010, "approximate": true }
+    },
+    "p_turki_abdullatif_albalali": {
+      "fullName": "تركي عبداللطيف البلالي",
+      "given": "تركي",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_abdullatif_albalali",
+      "motherId": "p_aseel_abuhumaid",
+      "birth": { "year": 2015, "approximate": true }
+    },
+
+    "p_mahmoud_alaqil": {
+      "fullName": "محمود العقيل",
+      "given": "محمود",
+      "family": "العقيل",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج رولا خالد البلالي. أبو نايف ونوف وشهد."
+    },
+    "p_nayef_alaqil": {
+      "fullName": "نايف محمود العقيل",
+      "given": "نايف",
+      "family": "العقيل",
+      "gender": "male",
+      "fatherId": "p_mahmoud_alaqil",
+      "motherId": "p_rola_albalali",
+      "birth": { "year": 1999, "approximate": true }
+    },
+    "p_nawf_alaqil": {
+      "fullName": "نوف محمود العقيل",
+      "given": "نوف",
+      "family": "العقيل",
+      "gender": "female",
+      "fatherId": "p_mahmoud_alaqil",
+      "motherId": "p_rola_albalali",
+      "birth": { "year": 1999, "approximate": true }
+    },
+    "p_shahd_alaqil": {
+      "fullName": "شهد محمود العقيل",
+      "given": "شهد",
+      "family": "العقيل",
+      "gender": "female",
+      "fatherId": "p_mahmoud_alaqil",
+      "motherId": "p_rola_albalali",
+      "birth": { "year": 2004, "approximate": true }
+    },
+
+    "p_lulwah_alomran": {
+      "fullName": "لولوة العمران",
+      "given": "لولوة",
+      "family": "العمران",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عمر خالد البلالي. أم خالد ولينا وسعود وسارة."
+    },
+    "p_khalid_omar_albalali": {
+      "fullName": "خالد عمر البلالي",
+      "given": "خالد",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_omar_albalali",
+      "motherId": "p_lulwah_alomran",
+      "birth": { "year": 2008, "approximate": true }
+    },
+    "p_lina_omar_albalali": {
+      "fullName": "لينا عمر البلالي",
+      "given": "لينا",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_omar_albalali",
+      "motherId": "p_lulwah_alomran",
+      "birth": { "year": 2012, "approximate": true }
+    },
+    "p_saud_omar_albalali": {
+      "fullName": "سعود عمر البلالي",
+      "given": "سعود",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_omar_albalali",
+      "motherId": "p_lulwah_alomran",
+      "birth": { "year": 2015, "approximate": true }
+    },
+    "p_sara_omar_albalali": {
+      "fullName": "سارة عمر البلالي",
+      "given": "سارة",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_omar_albalali",
+      "motherId": "p_lulwah_alomran",
+      "birth": { "year": 2020, "approximate": true }
+    },
+
+    "p_hajer_alasafi": {
+      "fullName": "هاجر العسافي",
+      "given": "هاجر",
+      "family": "العسافي",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبدالعزيز خالد البلالي. أم خالد وجوري وهديل وريما."
+    },
+    "p_khalid_abdulaziz_albalali": {
+      "fullName": "خالد عبدالعزيز البلالي",
+      "given": "خالد",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_albalali",
+      "motherId": "p_hajer_alasafi",
+      "birth": { "year": 2009, "approximate": true }
+    },
+    "p_jouri_abdulaziz_albalali": {
+      "fullName": "جوري عبدالعزيز البلالي",
+      "given": "جوري",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_abdulaziz_albalali",
+      "motherId": "p_hajer_alasafi",
+      "birth": { "year": 2010, "approximate": true }
+    },
+    "p_hadeel_abdulaziz_albalali": {
+      "fullName": "هديل عبدالعزيز البلالي",
+      "given": "هديل",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_abdulaziz_albalali",
+      "motherId": "p_hajer_alasafi",
+      "birth": { "year": 2015, "approximate": true }
+    },
+    "p_reema_abdulaziz_albalali": {
+      "fullName": "ريما عبدالعزيز البلالي",
+      "given": "ريما",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_abdulaziz_albalali",
+      "motherId": "p_hajer_alasafi",
+      "birth": { "year": 2020, "approximate": true }
+    },
+
+    "p_waad_alqahtani": {
+      "fullName": "وعد القحطاني",
+      "given": "وعد",
+      "family": "القحطاني",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة سعد خالد البلالي. أم هند ونورة وخالد."
+    },
+    "p_hind_saad_albalali": {
+      "fullName": "هند سعد البلالي",
+      "given": "هند",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_saad_albalali",
+      "motherId": "p_waad_alqahtani",
+      "birth": { "year": 2019, "approximate": true }
+    },
+    "p_noura_saad_albalali": {
+      "fullName": "نورة سعد البلالي",
+      "given": "نورة",
+      "family": "البلالي",
+      "gender": "female",
+      "fatherId": "p_saad_albalali",
+      "motherId": "p_waad_alqahtani",
+      "birth": { "year": 2019, "approximate": true },
+      "notes": "توأم مع هند سعد البلالي."
+    },
+    "p_khalid_saad_albalali": {
+      "fullName": "خالد سعد البلالي",
+      "given": "خالد",
+      "family": "البلالي",
+      "gender": "male",
+      "fatherId": "p_saad_albalali",
+      "motherId": "p_waad_alqahtani",
+      "birth": { "year": 2026, "approximate": true }
+    },
+
+    "p_abdullah_alhaider": {
+      "fullName": "عبدالله الحيدر",
+      "given": "عبدالله",
+      "family": "الحيدر",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج مها خالد البلالي. أبو حامد وخالد وسلطان."
+    },
+    "p_hamed_alhaider": {
+      "fullName": "حامد عبدالله الحيدر",
+      "given": "حامد",
+      "family": "الحيدر",
+      "gender": "male",
+      "fatherId": "p_abdullah_alhaider",
+      "motherId": "p_maha_albalali",
+      "birth": { "year": 2017, "approximate": true }
+    },
+    "p_khalid_alhaider": {
+      "fullName": "خالد عبدالله الحيدر",
+      "given": "خالد",
+      "family": "الحيدر",
+      "gender": "male",
+      "fatherId": "p_abdullah_alhaider",
+      "motherId": "p_maha_albalali",
+      "birth": { "year": 2020, "approximate": true }
+    },
+    "p_sultan_alhaider": {
+      "fullName": "سلطان عبدالله الحيدر",
+      "given": "سلطان",
+      "family": "الحيدر",
+      "gender": "male",
+      "fatherId": "p_abdullah_alhaider",
+      "motherId": "p_maha_albalali",
+      "birth": { "year": 2026, "approximate": true }
+    },
+
+    "p_raghda_alwarraq": {
+      "fullName": "رغدة الوراق",
+      "given": "رغدة",
+      "family": "الوراق",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة نايف أحمد ظهران. أم سلمان ولين وسلطان."
+    },
+    "p_salman_naif_zahran": {
+      "fullName": "سلمان نايف أحمد ظهران",
+      "given": "سلمان",
+      "family": "ظهران",
+      "gender": "male",
+      "fatherId": "p_naif_alghamdi",
+      "motherId": "p_raghda_alwarraq",
+      "birth": { "year": 2020, "approximate": true }
+    },
+    "p_leen_naif_zahran": {
+      "fullName": "لين نايف أحمد ظهران",
+      "given": "لين",
+      "family": "ظهران",
+      "gender": "female",
+      "fatherId": "p_naif_alghamdi",
+      "motherId": "p_raghda_alwarraq",
+      "birth": { "year": 2022, "approximate": true }
+    },
+    "p_sultan_naif_zahran": {
+      "fullName": "سلطان نايف أحمد ظهران",
+      "given": "سلطان",
+      "family": "ظهران",
+      "gender": "male",
+      "fatherId": "p_naif_alghamdi",
+      "motherId": "p_raghda_alwarraq",
+      "birth": { "year": 2025, "approximate": true }
+    },
+
+    "p_ahmed_rashad_saqr": {
+      "fullName": "أحمد رشاد صقر",
+      "given": "أحمد",
+      "family": "صقر",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج نوف أحمد ظهران. أبو محمد وعبدالله وسوزانا."
+    },
+    "p_mohammed_ahmed_saqr": {
+      "fullName": "محمد أحمد رشاد صقر",
+      "given": "محمد",
+      "family": "صقر",
+      "gender": "male",
+      "fatherId": "p_ahmed_rashad_saqr",
+      "motherId": "p_nawf_alghamdi",
+      "birth": { "year": 2012, "approximate": true }
+    },
+    "p_abdullah_ahmed_saqr": {
+      "fullName": "عبدالله أحمد رشاد صقر",
+      "given": "عبدالله",
+      "family": "صقر",
+      "gender": "male",
+      "fatherId": "p_ahmed_rashad_saqr",
+      "motherId": "p_nawf_alghamdi",
+      "birth": { "year": 2014, "approximate": true }
+    },
+    "p_suzanna_ahmed_saqr": {
+      "fullName": "سوزانا أحمد رشاد صقر",
+      "given": "سوزانا",
+      "family": "صقر",
+      "gender": "female",
+      "fatherId": "p_ahmed_rashad_saqr",
+      "motherId": "p_nawf_alghamdi",
+      "birth": { "year": 2024, "approximate": true }
+    },
+
+    "p_abdulaziz_ashari": {
+      "fullName": "عبدالعزيز الأشعري",
+      "given": "عبدالعزيز",
+      "family": "الأشعري",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج هيفاء أحمد ظهران. أبو يوسف وياسمين."
+    },
+    "p_yusuf_ashari": {
+      "fullName": "يوسف عبدالعزيز الأشعري",
+      "given": "يوسف",
+      "family": "الأشعري",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_ashari",
+      "motherId": "p_haifa_alghamdi",
+      "birth": { "year": 2017, "approximate": true }
+    },
+    "p_yasmin_ashari": {
+      "fullName": "ياسمين عبدالعزيز الأشعري",
+      "given": "ياسمين",
+      "family": "الأشعري",
+      "gender": "female",
+      "fatherId": "p_abdulaziz_ashari",
+      "motherId": "p_haifa_alghamdi",
+      "birth": { "year": 2019, "approximate": true }
+    },
+
+    "p_abdulwahab_alzamel": {
+      "fullName": "محمد الزامل",
+      "given": "محمد",
+      "family": "الزامل",
+      "kunya": "أبو عبدالوهاب",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج هيا أيمن أبالخيل. يُكنّى أبو عبدالوهاب (في سجل أحفاد عثمان كُتب بالكنية «عبدالوهاب الزامل»). أبناؤه: عبدالوهاب ومي وعبير وأسمى. (المعرّف \"p_abdulwahab_alzamel\" قديم وعكس الكنية لا الاسم — أُبقي كما هو لاستقرار المراجع.)"
+    },
+    "p_abdulwahab_son_alzamel": {
+      "fullName": "عبدالوهاب محمد الزامل",
+      "given": "عبدالوهاب",
+      "family": "الزامل",
+      "gender": "male",
+      "fatherId": "p_abdulwahab_alzamel",
+      "motherId": "p_haya_aymen_abalkhail",
+      "birth": { "year": 2013, "approximate": true }
+    },
+    "p_mai_alzamel": {
+      "fullName": "مي محمد الزامل",
+      "given": "مي",
+      "family": "الزامل",
+      "gender": "female",
+      "fatherId": "p_abdulwahab_alzamel",
+      "motherId": "p_haya_aymen_abalkhail",
+      "birth": { "year": 2015, "approximate": true }
+    },
+    "p_abeer_alzamel": {
+      "fullName": "عبير محمد الزامل",
+      "given": "عبير",
+      "family": "الزامل",
+      "gender": "female",
+      "fatherId": "p_abdulwahab_alzamel",
+      "motherId": "p_haya_aymen_abalkhail",
+      "birth": { "year": 2017, "approximate": true }
+    },
+    "p_asma_alzamel": {
+      "fullName": "أسمى محمد الزامل",
+      "given": "أسمى",
+      "family": "الزامل",
+      "gender": "female",
+      "fatherId": "p_abdulwahab_alzamel",
+      "motherId": "p_haya_aymen_abalkhail",
+      "birth": { "year": 2025, "approximate": true }
+    },
+
+    "p_lama_almuhanna": {
+      "fullName": "لمى المهنا",
+      "given": "لمى",
+      "family": "المهنا",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبدالإله أيمن أبالخيل. أم عبدالعزيز وخالد."
+    },
+    "p_abdulaziz_abdulilah_abalkhail": {
+      "fullName": "عبدالعزيز عبدالإله أبالخيل",
+      "given": "عبدالعزيز",
+      "family": "أبالخيل",
+      "gender": "male",
+      "fatherId": "p_abdulilah_abalkhail",
+      "motherId": "p_lama_almuhanna",
+      "birth": { "year": 2023, "approximate": true }
+    },
+    "p_khalid_abdulilah_abalkhail": {
+      "fullName": "خالد عبدالإله أبالخيل",
+      "given": "خالد",
+      "family": "أبالخيل",
+      "gender": "male",
+      "fatherId": "p_abdulilah_abalkhail",
+      "motherId": "p_lama_almuhanna",
+      "birth": { "year": 2025, "approximate": true }
+    },
+
+    "p_faisal_almudaihib": {
+      "fullName": "فيصل المهيدب",
+      "given": "فيصل",
+      "family": "المهيدب",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج سجى خالد القصبي. أبو عبدالرحمن وفهد وخالد."
+    },
+    "p_abdulrahman_faisal_almudaihib": {
+      "fullName": "عبدالرحمن فيصل المهيدب",
+      "given": "عبدالرحمن",
+      "family": "المهيدب",
+      "gender": "male",
+      "fatherId": "p_faisal_almudaihib",
+      "motherId": "p_saja_khalid_1981",
+      "birth": { "year": 2011, "approximate": true }
+    },
+    "p_fahd_faisal_almudaihib": {
+      "fullName": "فهد فيصل المهيدب",
+      "given": "فهد",
+      "family": "المهيدب",
+      "gender": "male",
+      "fatherId": "p_faisal_almudaihib",
+      "motherId": "p_saja_khalid_1981",
+      "birth": { "year": 2016, "approximate": true }
+    },
+    "p_khalid_faisal_almudaihib": {
+      "fullName": "خالد فيصل المهيدب",
+      "given": "خالد",
+      "family": "المهيدب",
+      "gender": "male",
+      "fatherId": "p_faisal_almudaihib",
+      "motherId": "p_saja_khalid_1981",
+      "birth": { "year": 2018, "approximate": true }
+    },
+
+    "p_hanan_almudaihib": {
+      "fullName": "حنان المهيدب",
+      "given": "حنان",
+      "family": "المهيدب",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عثمان خالد القصبي. أم ريما وخالد ومنصور وعلياء."
+    },
+    "p_reema_uthman_khalid": {
+      "fullName": "ريما عثمان القصبي",
+      "given": "ريما",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_uthman_khalid_1984",
+      "motherId": "p_hanan_almudaihib",
+      "birth": { "year": 2012, "approximate": true }
+    },
+    "p_khalid_uthman_khalid": {
+      "fullName": "خالد عثمان القصبي",
+      "given": "خالد",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_khalid_1984",
+      "motherId": "p_hanan_almudaihib",
+      "birth": { "year": 2018, "approximate": true }
+    },
+    "p_mansour_uthman_khalid": {
+      "fullName": "منصور عثمان القصبي",
+      "given": "منصور",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_uthman_khalid_1984",
+      "motherId": "p_hanan_almudaihib",
+      "birth": { "year": 2018, "approximate": true }
+    },
+    "p_aliaa_uthman_khalid": {
+      "fullName": "علياء عثمان القصبي",
+      "given": "علياء",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_uthman_khalid_1984",
+      "motherId": "p_hanan_almudaihib",
+      "birth": { "year": 2025, "approximate": true }
+    },
+
+    "p_abdulmuhsin_almudaihib": {
+      "fullName": "عبدالمحسن المهيدب",
+      "given": "عبدالمحسن",
+      "family": "المهيدب",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج دانة خالد القصبي. أبو لين وخالد ووليد."
+    },
+    "p_leen_abdulmuhsin_almudaihib": {
+      "fullName": "لين عبدالمحسن المهيدب",
+      "given": "لين",
+      "family": "المهيدب",
+      "gender": "female",
+      "fatherId": "p_abdulmuhsin_almudaihib",
+      "motherId": "p_dana_khalid_1986",
+      "birth": { "year": 2013, "approximate": true }
+    },
+    "p_khalid_abdulmuhsin_almudaihib": {
+      "fullName": "خالد عبدالمحسن المهيدب",
+      "given": "خالد",
+      "family": "المهيدب",
+      "gender": "male",
+      "fatherId": "p_abdulmuhsin_almudaihib",
+      "motherId": "p_dana_khalid_1986",
+      "birth": { "year": 2014, "approximate": true }
+    },
+    "p_walid_abdulmuhsin_almudaihib": {
+      "fullName": "وليد عبدالمحسن المهيدب",
+      "given": "وليد",
+      "family": "المهيدب",
+      "gender": "male",
+      "fatherId": "p_abdulmuhsin_almudaihib",
+      "motherId": "p_dana_khalid_1986",
+      "birth": { "year": 2016, "approximate": true }
+    },
+
+    "p_adeem_alqaseer": {
+      "fullName": "أديم القصير",
+      "given": "أديم",
+      "family": "القصير",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة مثنى خالد القصبي. أم سلطان."
+    },
+    "p_sultan_muthana_khalid": {
+      "fullName": "سلطان مثنى القصبي",
+      "given": "سلطان",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_muthana_khalid_1990",
+      "motherId": "p_adeem_alqaseer",
+      "birth": { "year": 2025, "approximate": true }
+    },
+
+    "p_nawaf_alsuwailem": {
+      "fullName": "نواف السويلم",
+      "given": "نواف",
+      "family": "السويلم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "isDeceased": true,
+      "notes": "زوج مشاعل قاسم القصبي (الله يرحمه). أبو ريما وبسمة."
+    },
+    "p_reema_nawaf_alsuwailem": {
+      "fullName": "ريما نواف السويلم",
+      "given": "ريما",
+      "family": "السويلم",
+      "gender": "female",
+      "fatherId": "p_nawaf_alsuwailem",
+      "motherId": "p_mashael_qasim",
+      "birth": { "year": 2005, "approximate": true }
+    },
+    "p_basma_nawaf_alsuwailem": {
+      "fullName": "بسمة نواف السويلم",
+      "given": "بسمة",
+      "family": "السويلم",
+      "gender": "female",
+      "fatherId": "p_nawaf_alsuwailem",
+      "motherId": "p_mashael_qasim",
+      "birth": { "year": 2011, "approximate": true }
+    },
+
+    "p_abdulrahman_alajaji": {
+      "fullName": "عبدالرحمن العجاجي",
+      "given": "عبدالرحمن",
+      "family": "العجاجي",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج ندى قاسم القصبي. أبو عالية ومحمد ومها."
+    },
+    "p_aliaa_alajaji": {
+      "fullName": "عالية عبدالرحمن العجاجي",
+      "given": "عالية",
+      "family": "العجاجي",
+      "gender": "female",
+      "fatherId": "p_abdulrahman_alajaji",
+      "motherId": "p_nada_qasim",
+      "birth": { "year": 2013, "approximate": true }
+    },
+    "p_mohammed_alajaji": {
+      "fullName": "محمد عبدالرحمن العجاجي",
+      "given": "محمد",
+      "family": "العجاجي",
+      "gender": "male",
+      "fatherId": "p_abdulrahman_alajaji",
+      "motherId": "p_nada_qasim",
+      "birth": { "year": 2015, "approximate": true }
+    },
+    "p_maha_alajaji": {
+      "fullName": "مها عبدالرحمن العجاجي",
+      "given": "مها",
+      "family": "العجاجي",
+      "gender": "female",
+      "fatherId": "p_abdulrahman_alajaji",
+      "motherId": "p_nada_qasim",
+      "birth": { "year": 2022, "approximate": true }
+    },
+
+    "p_fahd_alsalem": {
+      "fullName": "فهد السالم",
+      "given": "فهد",
+      "family": "السالم",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج صبا قاسم القصبي. أبو سارة."
+    },
+    "p_sara_fahd_alsalem": {
+      "fullName": "سارة فهد السالم",
+      "given": "سارة",
+      "family": "السالم",
+      "gender": "female",
+      "fatherId": "p_fahd_alsalem",
+      "motherId": "p_saba_qasim_1985",
+      "birth": { "year": 2018, "approximate": true }
+    },
+
+    "p_sara_bindakhil": {
+      "fullName": "سارة بن دخيل",
+      "given": "سارة",
+      "family": "بن دخيل",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبدالعزيز قاسم القصبي. أم عبدالله وعالية."
+    },
+    "p_abdullah_abdulaziz_qasim": {
+      "fullName": "عبدالله عبدالعزيز القصبي",
+      "given": "عبدالله",
+      "family": "القصبي",
+      "gender": "male",
+      "fatherId": "p_abdulaziz_qasim_1992",
+      "motherId": "p_sara_bindakhil",
+      "birth": { "year": 2022, "approximate": true }
+    },
+    "p_aliaa_abdulaziz_qasim": {
+      "fullName": "عالية عبدالعزيز القصبي",
+      "given": "عالية",
+      "family": "القصبي",
+      "gender": "female",
+      "fatherId": "p_abdulaziz_qasim_1992",
+      "motherId": "p_sara_bindakhil",
+      "birth": { "year": 2025, "approximate": true }
+    },
+
+    "p_mohammed_alkhuwaitir": {
+      "fullName": "محمد الخويطر",
+      "given": "محمد",
+      "family": "الخويطر",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوج هلا قاسم القصبي. أبو لولوة."
+    },
+    "p_lulwah_alkhuwaitir": {
+      "fullName": "لولوة محمد الخويطر",
+      "given": "لولوة",
+      "family": "الخويطر",
+      "gender": "female",
+      "fatherId": "p_mohammed_alkhuwaitir",
+      "motherId": "p_hala_qasim",
+      "birth": { "year": 2025, "approximate": true }
+    },
+
+    "p_mohammed_almutair": {
+      "fullName": "محمد الصالح المطير",
+      "given": "محمد",
+      "family": "الصالح المطير",
+      "gender": "male",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "طليق فاطمة عبدالرزاق المشرف (الزواج انتهى بالطلاق). أبو فرح وسارة."
+    },
+    "p_farah_almutair": {
+      "fullName": "فرح محمد المطير",
+      "given": "فرح",
+      "family": "المطير",
+      "gender": "female",
+      "fatherId": "p_mohammed_almutair",
+      "motherId": "p_fatima_almushrif_1987",
+      "birth": { "year": 2014, "approximate": true }
+    },
+    "p_sara_almutair": {
+      "fullName": "سارة محمد المطير",
+      "given": "سارة",
+      "family": "المطير",
+      "gender": "female",
+      "fatherId": "p_mohammed_almutair",
+      "motherId": "p_fatima_almushrif_1987",
+      "birth": { "year": 2015, "approximate": true }
+    },
+
+    "p_alaa_alburaykan": {
+      "fullName": "ألاء البريكان",
+      "given": "ألاء",
+      "family": "البريكان",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة سليمان عبدالرزاق المشرف. أم منيرة وجود والذانة."
+    },
+    "p_munira_suleiman_almushrif": {
+      "fullName": "منيرة سليمان المشرف",
+      "given": "منيرة",
+      "family": "المشرف",
+      "gender": "female",
+      "fatherId": "p_suleiman_almushrif_1986",
+      "motherId": "p_alaa_alburaykan",
+      "birth": { "year": 2020, "approximate": true }
+    },
+    "p_joud_suleiman_almushrif": {
+      "fullName": "جود سليمان المشرف",
+      "given": "جود",
+      "family": "المشرف",
+      "gender": "female",
+      "fatherId": "p_suleiman_almushrif_1986",
+      "motherId": "p_alaa_alburaykan",
+      "birth": { "year": 2021, "approximate": true }
+    },
+    "p_aldhana_suleiman_almushrif": {
+      "fullName": "الذانة سليمان المشرف",
+      "given": "الذانة",
+      "family": "المشرف",
+      "gender": "female",
+      "fatherId": "p_suleiman_almushrif_1986",
+      "motherId": "p_alaa_alburaykan",
+      "birth": { "year": 2022, "approximate": true }
+    },
+
+    "p_fatima_alfurayh": {
+      "fullName": "فاطمة الفريح",
+      "given": "فاطمة",
+      "family": "الفريح",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عمر عبدالرزاق المشرف. أم عبدالعزيز ووسن وورد."
+    },
+
+    "p_bilqis_alqudaib": {
+      "fullName": "بلقيس القضيب",
+      "given": "بلقيس",
+      "family": "القضيب",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة يوسف طارق الرشود. أم ترف وسيف."
+    },
+
+    "p_nawf_almazroua": {
+      "fullName": "نوف المزروع",
+      "given": "نوف",
+      "family": "المزروع",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة إبراهيم طارق الرشود. أم في ومساعد."
+    },
+
+    "p_malak_alhaqil": {
+      "fullName": "ملاك الحقيل",
+      "given": "ملاك",
+      "family": "الحقيل",
+      "gender": "female",
+      "external": true,
+      "isPlaceholder": true,
+      "notes": "زوجة عبدالرحمن أحمد عثمان القصبي. أم علياء والجوهرة."
+    }
+  },
+
+  "marriages": [
+    { "id": "m_abdullah_abdulaziz__moudi", "spouseIds": ["p_abdullah_abdulaziz_qassabi", "p_moudi_alhamdan"] },
+    { "id": "m_uthman1898__noura_almuhaidib", "spouseIds": ["p_uthman_1898", "p_noura_almuhaidib"], "order": 1 },
+    { "id": "m_uthman1898__noura_alraqraq", "spouseIds": ["p_uthman_1898", "p_noura_alraqraq_1930"], "order": 2 },
+    { "id": "m_saad_alraqraq__munira", "spouseIds": ["p_saad_alraqraq", "p_munira_alushayri"] },
+    { "id": "m_abdullah1922__qumasha", "spouseIds": ["p_abdullah_1922", "p_qumasha_albalali"], "order": 1, "dissolved": true, "notes": "الزواج الأول لعبدالله ١٩٢٠ — انتهى بالطلاق. أبناؤهما: هند." },
+    { "id": "m_abdullah1922__mushira", "spouseIds": ["p_abdullah_1922", "p_mushira_kassab"], "order": 2, "dissolved": true, "notes": "الزواج الثاني لعبدالله ١٩٢٠ — انتهى بالطلاق. أبناؤهما: منى ومي وماجد وأسامة." },
+    { "id": "m_mohammed1940__khawla_anqari", "spouseIds": ["p_mohammed_1940", "p_khawla_alanqari"] },
+    { "id": "m_yusuf1945__nawal", "spouseIds": ["p_yusuf_1945", "p_nawal_alrushud"] },
+    { "id": "m_hind__khalid_albalali", "spouseIds": ["p_hind_1948", "p_khalid_albalali"] },
+    { "id": "m_asma__yusuf_alhamdan", "spouseIds": ["p_asma_1949", "p_yusuf_alhamdan"] },
+    { "id": "m_tariq1951__manal_alqasim", "spouseIds": ["p_tariq_1951", "p_manal_alqasim"], "year": 1974, "month": 6, "day": 2 },
+    { "id": "m_qasim__aliaa", "spouseIds": ["p_qasim_1952", "p_aliaa_almuhaidib"] },
+    { "id": "m_khawla1955__tariq_alrushud", "spouseIds": ["p_khawla_1955", "p_tariq_alrushud"], "dissolved": true, "notes": "خولة طليقة طارق الرشود (انفصلا قبل وفاته رحمه الله). أبناؤهما: سارة ويوسف وإبراهيم وهيا وصالح وعبدالله ونائلة وسلمان." },
+    { "id": "m_muna__ahmed_zahran", "spouseIds": ["p_muna_1957", "p_ahmed_alghamdi"], "order": 2, "dissolved": true, "notes": "الزواج الثاني لمنى — انفصلا (طلّقها) ثم توفي أحمد ظهران قبلها. أبناؤهما: نايف وهيفاء ونوف وعبدالله." },
+    { "id": "m_muna__abdulqader_bassam", "spouseIds": ["p_muna_1957", "p_ibn_albassam"], "order": 1, "dissolved": true, "notes": "الزواج الأول لمنى — انتهى بالطلاق ولم يُنجبا. (المعرّف \"m_mai__ibn_albassam\" قديم وكان مسجَّلًا خطأً كزواج مي.)" },
+    { "id": "m_mai__aymen_abalkhail", "spouseIds": ["p_mai_qassabi", "p_aymen_abalkhail"], "order": 2, "notes": "الزواج الثاني لمي. أبناؤهما: عبدالرحمن وعبدالإله وهيا." },
+    { "id": "m_majed__eman", "spouseIds": ["p_majed_1960", "p_eman_abalkhail"] },
+    { "id": "m_abdullah_majed__noura_alzahed", "spouseIds": ["p_abdullah_majed", "p_noura_alzahed"] },
+    { "id": "m_noura_majed__fahd_khasheim", "spouseIds": ["p_noura_majed", "p_fahd_khasheim"] },
+    { "id": "m_layla_majed__sultan_almuslim", "spouseIds": ["p_layla_majed", "p_sultan_almuslim"] },
+    { "id": "m_salwa__abdulrazaq", "spouseIds": ["p_salwa_1962", "p_abdulrazaq_almushrif"] },
+    { "id": "m_maha_yusuf__riyadh", "spouseIds": ["p_maha_yusuf_1975", "p_riyadh_alrubaya"] },
+    { "id": "m_manal_tariq__mustafa", "spouseIds": ["p_manal_tariq_1979", "p_mustafa_alhamdan"] },
+    { "id": "m_shahd__osama_aldraihem", "spouseIds": ["p_shahd_mustafa_2000", "p_osama_aldraihem"] },
+    { "id": "m_abeer__anas_turki", "spouseIds": ["p_abeer_tariq_1991", "p_anas_alturki"] },
+    { "id": "m_aseel__yusuf_aamer", "spouseIds": ["p_aseel_tariq_1993", "p_yusuf_alaamer"] },
+    { "id": "m_sara_rushud__imad_sharia", "spouseIds": ["p_sara_alrushud_1978", "p_imad_alsharia"] },
+    { "id": "m_haya_rushud__ali_shuwaier", "spouseIds": ["p_haya_alrushud_1985", "p_anas_alshuwaier"], "dissolved": true, "notes": "هيا طليقة أنس الشويعر. أبناؤهما: صبا وليلى." },
+    { "id": "m_hadeel__mohammed_jamaz", "spouseIds": ["p_hadeel_ahmed_1989", "p_mohammed_aljamaz"] },
+    { "id": "m_ahmed__nasrin", "spouseIds": ["p_ahmed_1960", "p_nasrin_jarallah_aamer"], "year": 1983 },
+    { "id": "m_abdulmuhsin__dana", "spouseIds": ["p_abdulmuhsin_ahmed_1991", "p_dana_alfawaz"], "year": 2017, "month": 9, "day": 3 },
+    { "id": "m_uthman_tariq__alaa", "spouseIds": ["p_uthman_tariq_1976", "p_alaa_alsuwailem"] },
+    { "id": "m_abdullah_tariq__fatima", "spouseIds": ["p_abdullah_tariq_1981", "p_fatima_almudaihem"] },
+    { "id": "m_ahmed_tariq__farah", "spouseIds": ["p_ahmed_tariq_1994", "p_farah_binmasud"], "year": 2025, "month": 1, "day": 21 },
+    { "id": "m_salman_uthman__reem", "spouseIds": ["p_salman_uthman_1999", "p_reem_aldreis"] },
+    { "id": "m_zahia__zamel", "spouseIds": ["p_zahia_alashri", "p_zamel_almusfer"] },
+    { "id": "m_noura_alashri__alreis", "spouseIds": ["p_noura_alashri", "p_unknown_alreis"] },
+    { "id": "m_reem__iyas", "spouseIds": ["p_reem_alhamdan", "p_iyas_alhajeri"] },
+    { "id": "m_rana__ishaq", "spouseIds": ["p_rana_alhamdan", "p_ishaq_alhajeri"] },
+    { "id": "m_noura_alhamdan__abdulaziz_majed", "spouseIds": ["p_noura_alhamdan_1985", "p_abdulaziz_majed_1985"] },
+    { "id": "m_moudi__mohammed_albalali", "spouseIds": ["p_moudi_alhamdan", "p_mohammed_albalali"], "order": 2 },
+    { "id": "m_naser_mohammed__fawzi_daughter", "spouseIds": ["p_naser_mohammed", "p_unnamed_fawzi_daughter"] },
+    { "id": "m_najood__abdullah_almubarak", "spouseIds": ["p_najood_iyas_1999", "p_abdullah_almubarak"], "year": 2025 },
+    { "id": "m_hala__ahmed_alfaqih", "spouseIds": ["p_hala_ahmed_1996", "p_ahmed_alfaqih"] },
+    { "id": "m_saad__rasha", "spouseIds": ["p_saad_1966", "p_rasha_alsuwailem"] },
+    { "id": "m_arwa__abdulaziz_alrayyes", "spouseIds": ["p_arwa_saad_1990", "p_abdulaziz_alrayyes"] },
+    { "id": "m_noura_saad__muadh", "spouseIds": ["p_noura_saad_1992", "p_muadh_alrashed"] },
+    { "id": "m_rawan__omar_alqasim", "spouseIds": ["p_rawan_saad_1994", "p_omar_alqasim"] },
+    { "id": "m_walid__khulood", "spouseIds": ["p_walid_albalali", "p_khulood_abateen"] },
+    { "id": "m_abdullatif__aseel", "spouseIds": ["p_abdullatif_albalali", "p_aseel_abuhumaid"] },
+    { "id": "m_rola__mahmoud", "spouseIds": ["p_rola_albalali", "p_mahmoud_alaqil"] },
+    { "id": "m_omar_albalali__lulwah", "spouseIds": ["p_omar_albalali", "p_lulwah_alomran"] },
+    { "id": "m_abdulaziz_albalali__hajer", "spouseIds": ["p_abdulaziz_albalali", "p_hajer_alasafi"] },
+    { "id": "m_saad_albalali__waad", "spouseIds": ["p_saad_albalali", "p_waad_alqahtani"] },
+    { "id": "m_maha__abdullah_alhaider", "spouseIds": ["p_maha_albalali", "p_abdullah_alhaider"] },
+    { "id": "m_naif_zahran__raghda", "spouseIds": ["p_naif_alghamdi", "p_raghda_alwarraq"] },
+    { "id": "m_nawf_zahran__ahmed_saqr", "spouseIds": ["p_nawf_alghamdi", "p_ahmed_rashad_saqr"] },
+    { "id": "m_haifa_zahran__abdulaziz_ashari", "spouseIds": ["p_haifa_alghamdi", "p_abdulaziz_ashari"] },
+    { "id": "m_haya_abalkhail__abdulwahab", "spouseIds": ["p_haya_aymen_abalkhail", "p_abdulwahab_alzamel"] },
+    { "id": "m_abdulilah__lama", "spouseIds": ["p_abdulilah_abalkhail", "p_lama_almuhanna"] },
+    { "id": "m_saja__faisal_mudaihib", "spouseIds": ["p_saja_khalid_1981", "p_faisal_almudaihib"] },
+    { "id": "m_uthman_khalid__hanan", "spouseIds": ["p_uthman_khalid_1984", "p_hanan_almudaihib"] },
+    { "id": "m_dana_khalid__abdulmuhsin", "spouseIds": ["p_dana_khalid_1986", "p_abdulmuhsin_almudaihib"] },
+    { "id": "m_muthana__adeem", "spouseIds": ["p_muthana_khalid_1990", "p_adeem_alqaseer"] },
+    { "id": "m_mashael__nawaf", "spouseIds": ["p_mashael_qasim", "p_nawaf_alsuwailem"] },
+    { "id": "m_nada__abdulrahman_ajaji", "spouseIds": ["p_nada_qasim", "p_abdulrahman_alajaji"] },
+    { "id": "m_saba__fahd_salem", "spouseIds": ["p_saba_qasim_1985", "p_fahd_alsalem"] },
+    { "id": "m_abdulaziz_qasim__sara", "spouseIds": ["p_abdulaziz_qasim_1992", "p_sara_bindakhil"] },
+    { "id": "m_hala_qasim__mohammed_khuwaitir", "spouseIds": ["p_hala_qasim", "p_mohammed_alkhuwaitir"] },
+    { "id": "m_fatima_mushrif__mohammed_mutair", "spouseIds": ["p_fatima_almushrif_1987", "p_mohammed_almutair"], "dissolved": true, "notes": "فاطمة طليقة محمد الصالح المطير. لها منه ابنتان: فرح وسارة." },
+    { "id": "m_suleiman_mushrif__alaa", "spouseIds": ["p_suleiman_almushrif_1986", "p_alaa_alburaykan"] },
+    { "id": "m_omar_mushrif__fatima_furayh", "spouseIds": ["p_omar_almushrif_1990", "p_fatima_alfurayh"] },
+    { "id": "m_yusuf_rushud__bilqis", "spouseIds": ["p_yusuf_alrushud_1980", "p_bilqis_alqudaib"] },
+    { "id": "m_ibrahim_rushud__nawf_mazroua", "spouseIds": ["p_ibrahim_alrushud_1982", "p_nawf_almazroua"] },
+    { "id": "m_abdulrahman_ahmed__malak", "spouseIds": ["p_abdulrahman_ahmed_1985", "p_malak_alhaqil"] },
+    { "id": "m_khalid1957__muna_mohammed", "spouseIds": ["p_khalid_1957", "p_muna_mohammed_qassabi"], "notes": "خالد ومنى يلتقيان في الجدّ الأكبر عبدالعزيز القصبي: خالد عبر أبيه عثمان ١٨٩٨ → جده عبدالله، ومنى عبر فرع عثمان الكبير أخي عبدالله." },
+    { "id": "m_mishaal__roqaya", "spouseIds": ["p_mishaal_yusuf_1977", "p_roqaya_alaqil"], "order": 1, "dissolved": true, "notes": "الزوجة الأولى لمشعل — طلّقها لاحقاً. أبناؤهما: عبدالله ولين وسعود ويوسف ومها." },
+    { "id": "m_mishaal__khulood", "spouseIds": ["p_mishaal_yusuf_1977", "p_khulood_albadr"], "order": 2, "notes": "الزوجة الثانية. ابنتهما: فرح." },
+    { "id": "m_hamdan__maryam_qaraawi", "spouseIds": ["p_hamdan_alhamdan", "p_maryam_alqaraawi"] },
+    { "id": "m_bader__lulu_mudaihem", "spouseIds": ["p_bader_alhamdan", "p_lulu_almudaihem"], "notes": "لولو وفاطمة (زوجة عبدالله طارق القصبي) أختان من سليمان المديهيم — قرابة بين فرعَي أسماء وطارق القصبي." },
+    { "id": "m_mohammed_iyas__rawan", "spouseIds": ["p_mohammed_iyas_1994", "p_rawan_alhaider_iyas"], "year": 2021 },
+    { "id": "m_omar_iyas__suad", "spouseIds": ["p_omar_iyas_1997", "p_suad_alsaleem"], "year": 2024 },
+    { "id": "m_moudi__saud_raqraq", "spouseIds": ["p_moudi_yusuf_1980", "p_saud_alraqraq_husband"] },
+    { "id": "m_uthman_yusuf__sara_rubaya", "spouseIds": ["p_uthman_yusuf_1983", "p_sara_alrubaya_uthman_wife"] },
+    { "id": "m_saleh_yusuf__hadeel_raqraq", "spouseIds": ["p_saleh_yusuf_1989", "p_hadeel_alraqraq"], "notes": "هديل بنت محمد الرقراق وأخت سعود الرقراق (زوج موضي يوسف). تربط هذه القرابة بين فرع يوسف القصبي وفرع نورة الرقراق (أخت أبيها محمد)." },
+    { "id": "m_fahd_yusuf__nawf_qasim", "spouseIds": ["p_fahd_yusuf_1977", "p_nawf_alqasim_fahd_wife"] },
+    { "id": "m_reem_mushrif__shayie", "spouseIds": ["p_reem_almushrif", "p_reem_mushrif_husband_shayie"], "notes": "زوج ريم من عائلة الشايع أهل رياض الخبراء." }
+  ],
+
+  "milkRelations": [
+    {
+      "id": "milk_uthman_alawidi",
+      "type": "milk-sibling",
+      "personIds": ["p_uthman_1898"],
+      "milkSiblingNames": ["… العويدي"],
+      "notes": "أخت عثمان عبدالله القصبي بالرضاعة من عائلة العويدي. الاسم الكامل غير موثق."
+    },
+    {
+      "id": "milk_noura_alraqraq_unknown",
+      "type": "milk-sibling",
+      "personIds": ["p_noura_alraqraq_1930"],
+      "milkSiblingNames": [],
+      "notes": "إخوة نورة بنت سعد الرقراق بالرضاعة (غير موثقين)."
+    },
+    {
+      "id": "milk_khawla_1955",
+      "type": "milk-mother",
+      "milkMotherId": "p_khawla_1955",
+      "personIds": ["p_arwa_saad_1990", "p_bader_alhamdan", "p_fatima_almushrif_1987"],
+      "milkSiblingNames": ["حنان الرقراق"],
+      "notes": "خولة عثمان عبدالله القصبي أرضعت أربعة: أروى سعد القصبي (بنت أخيها سعد)، بدر يوسف الحمدان (ابن أختها أسماء)، فاطمة عبدالرزاق المشرف (بنت أختها سلوى)، وحنان الرقراق."
+    },
+    {
+      "id": "milk_manal_tariq",
+      "type": "milk-mother",
+      "milkMotherId": "p_manal_tariq_1979",
+      "personIds": ["p_nour_anas_2017"],
+      "milkSiblingNames": [],
+      "notes": "منال طارق عثمان القصبي أرضعت بنت أختها عبير: نور أنس إبراهيم التركي."
+    },
+    {
+      "id": "milk_abeer_tariq",
+      "type": "milk-mother",
+      "milkMotherId": "p_abeer_tariq_1991",
+      "personIds": ["p_tariq_mustafa_2017", "p_alaa_yusuf_2021"],
+      "milkSiblingNames": [],
+      "notes": "عبير طارق عثمان القصبي أرضعت اثنين من أبناء أخواتها: طارق مصطفى الحمدان (ابن أختها منال)، وآلاء يوسف العامر (بنت أختها أسيل)."
+    },
+    {
+      "id": "milk_alaa_alsuwailem",
+      "type": "milk-mother",
+      "milkMotherId": "p_alaa_alsuwailem",
+      "personIds": ["p_mudawi_abdullah_2015"],
+      "milkSiblingNames": [],
+      "notes": "آلاء عبدالرحمن السويلم (زوجة عثمان طارق القصبي) أرضعت بنت أخي زوجها: مضاوي عبدالله طارق القصبي."
+    },
+    {
+      "id": "milk_moudi_yusuf",
+      "type": "milk-mother",
+      "milkMotherId": "p_moudi_yusuf_1980",
+      "personIds": ["p_salma_bader_2015"],
+      "milkSiblingNames": [],
+      "notes": "موضي يوسف عثمان القصبي أرضعت بنت ابن عمتها: سلمى بدر يوسف الحمدان (موضي وبدر ابنا عمومة من جهة عثمان ١٨٩٤)."
+    },
+    {
+      "id": "milk_lulu_almudaihem",
+      "type": "milk-mother",
+      "milkMotherId": "p_lulu_almudaihem",
+      "personIds": ["p_saad_abdullah_2015", "p_nawaf_saud_raqraq_2015"],
+      "milkSiblingNames": ["وليد محمد السويدان"],
+      "notes": "لولو المديهيم أرضعت ثلاثة: سعد عبدالله طارق القصبي، ووليد محمد السويدان، ونواف سعود الرقراق."
+    },
+    {
+      "id": "milk_noura_saad",
+      "type": "milk-mother",
+      "milkMotherId": "p_noura_saad_1992",
+      "personIds": [],
+      "milkSiblingNames": ["لولو عمر القاسم"],
+      "notes": "نورة سعد عثمان القصبي أرضعت لولو عمر القاسم (من خارج الشجرة)."
+    },
+    {
+      "id": "milk_rawan_saad",
+      "type": "milk-mother",
+      "milkMotherId": "p_rawan_saad_1994",
+      "personIds": ["p_osama_osama_2025"],
+      "milkSiblingNames": [],
+      "notes": "روان سعد عثمان القصبي أرضعت أسامة عمر أسامة الدريهم (ابن شهد مصطفى الحمدان وابن أختها بالرضاعة)."
+    }
+  ],
+
+  "tribes": {
+    "القصبي": { "tribe": "الجحادر من القحاطين", "tribalRootId": "p_qasim_alasem_qahatin", "notes": "الفرع الرئيسي. يرجع نسب القصبي إلى القاسم آل علي آل عاصم من الجحادر من القحاطين عبر أجيال وسيطة غير موثّقة." },
+    "آل علي آل عاصم": { "tribe": "الجحادر من القحاطين", "tribalRootId": "p_qasim_alasem_qahatin", "notes": "نسب القصبي ومنيرة عبدالله القاسم زوجة طارق ١٩٥١. الأصل القبلي المشترك: القاسم آل علي آل عاصم من الجحادر من القحاطين." },
+    "آل عاصم": { "tribe": "الجحادر من القحاطين", "tribalRootId": "p_qasim_alasem_qahatin", "notes": "تابعة لآل علي آل عاصم. منيرة عبدالله القاسم زوجة طارق ١٩٥١. تشترك مع القصبي في الأصل القبلي: القاسم آل علي آل عاصم من الجحادر من القحاطين." },
+    "الجحادر من القحاطين": { "tribalRootId": "p_qasim_alasem_qahatin", "notes": "الأصل القبلي الجامع للقصبي وآل عاصم — يرجع كلاهما إلى القاسم آل علي آل عاصم من الجحادر من القحاطين." },
+    "الحمدان": { "tribe": "النواصر من بني تميم", "origin": "الداخلة (روضة سدير)", "notes": "الحمدان الدخيّل من الداخلة (روضة سدير)، يرجعون إلى النواصر من بني تميم. موضي الحمدان (الجدة الكبرى) ويوسف بن حمدان بن ناصر الحمدان (زوج أسماء)." },
+    "المهيدب": { "tribe": "بني تميم", "origin": "سدير", "notes": "من سدير، بني تميم. نورة المهيدب (الزوجة الأولى لعثمان ١٨٩٤) وعالية المهيدب (زوجة قاسم)." },
+    "الرقراق الشايع": { "tribe": "بني تميم", "notes": "نورة الرقراق (الزوجة الثانية لعثمان ١٨٩٤)." },
+    "البلالي": { "tribe": "دهامشة من عنزة", "notes": "من دهامشة من عنزة. قماشة البلالي (إحدى زوجتي عبدالله ١٩٢٢)، خالد البلالي (زوج هند)، ومحمد البلالي (الزوج الثاني لموضي الحمدان وأبو الأخت الوحيدة لعثمان من أمه)." },
+    "كسّاب": { "notes": "مشيرة كسّاب (إحدى زوجتي عبدالله ١٩٢٢)." },
+    "الفقيه العنقري": { "tribe": "عناقر", "origin": "سدير", "notes": "عناقر من سدير. خولة الفقيه العنقري (زوجة محمد عثمان)." },
+    "الرشود": { "tribe": "سبعان", "origin": "الأفلاج", "notes": "من الأفلاج، سبعان. نوال الرشود (زوجة يوسف) وطارق الرشود (زوج خولة)." },
+    "المشرف": { "tribe": "المشارفة من تميم", "notes": "من المشارفة من تميم. عبدالرزاق المشرف (زوج سلوى)." },
+    "الغامدي": { "notes": "أحمد ظهران الغامدي (زوج منى عبدالله القصبي، رحمه الله)." },
+    "أبا الخيل": { "tribe": "بن نجيد من المصاليخ من عنزة", "notes": "أيمن أبا الخيل (الزوج الثاني لمي عبدالله القصبي). إيمان أبالخيل (زوجة ماجد عبدالله القصبي) — فردان مستقلّان من نفس العائلة." },
+    "الجارالله العامر": { "tribe": "دواسر (داعين)", "origin": "الزلفي", "tribalRootId": "p_jarallah_jarallah_aamer", "notes": "من الزلفي، دواسر من داعين. عائلة نسرين (والدة الكاتب) ويوسف فؤاد (زوج أسيل) — كلاهما من نسل جارالله الجارالله العامر." },
+    "الفواز": { "tribe": "الزعوب (الزعبي)", "origin": "يمامة الخرج", "notes": "من يمامة الخرج، الزعوب (الزعبي). إبراهيم الفواز (والد دانة)." },
+    "الجماز": { "tribe": "بني زيد", "origin": "شقراء", "notes": "من شقراء، بني زيد. محمد الجماز (زوج هديل أحمد)." },
+    "السويلم": { "tribe": "دواسر", "origin": "ثادق", "notes": "من ثادق، دواسر. آلاء السويلم (زوجة عثمان طارق)." },
+    "الحقيل": { "tribe": "عنوز", "origin": "المجمعة", "notes": "عنوز من المجمعة. (لا يوجد حاليًا فرد مرتبط بالعائلة في الشجرة.)" },
+    "الهاجري": { "notes": "إياس سمير الهاجري (زوج ريم) وإسحاق حمود الهاجري (زوج رنا)." },
+    "بن مسعود": { "notes": "عبدالله بن مسعود (والد فرح زوجة أحمد طارق)." },
+    "الدريس": { "notes": "سامي الدريس (والد ريم زوجة سلمان عثمان)." },
+    "السدحان": { "notes": "صالح السدحان (جد منيرة القاسم لأمها)." },
+    "العشري": { "notes": "عائلة منيرة (أم حسين) والدة نورة الرقراق. ابوها عبدالله العشري." },
+    "السبيعي": { "notes": "نوال الرشود السبيعي (زوجة يوسف عثمان)." }
+  }
+}

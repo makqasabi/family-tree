@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مسودة شجرة عائلة عثمان بن عبدالله بن عبدالعزيز القصبي وأرحامهم وأصهارهم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Password / setup gate -->
+  <div id="gate" class="gate-overlay">
+    <div class="gate-card">
+      <div id="gate-content"><!-- replaced by JS --></div>
+    </div>
+  </div>
+
+  <!-- Main app (hidden until unlocked) -->
+  <div id="app" hidden>
+    <header class="app-header">
+      <div class="header-titles">
+        <h1>مسودة شجرة عائلة عثمان بن عبدالله بن عبدالعزيز القصبي<br/><span class="header-rahem">وأرحامهم وأصهارهم</span></h1>
+        <span class="header-draft-note">(بانتظار التعديلات والإضافات)</span>
+        <p class="header-disclaimer">تنويه: يهدف هذا العمل التوثيقي إلى حصر وجمع كافة أفراد عائلة آل عثمان بن عبدالله القصبي، ويشمل الذرّية والأرحام والأصهار.</p>
+      </div>
+      <nav class="tabs">
+        <button data-view="outline" class="active">قائمة هرمية</button>
+        <button data-view="tree">شجرة بصرية</button>
+        <button data-view="linked" title="العوائل المرتبطة بالنسب">العوائل المرتبطة</button>
+        <button data-view="milk">الرضاعة</button>
+        <button data-view="chronology">الأحداث</button>
+      </nav>
+      <div class="actions">
+        <span id="unsaved-badge" class="unsaved-badge" hidden>تغييرات غير محفوظة</span>
+        <label id="admin-female-dob-wrap" class="admin-toggle" hidden title="إظهار/إخفاء جميع تواريخ ميلاد النساء (للمشرف فقط)">
+          <input type="checkbox" id="admin-female-dob" />
+          <span>إظهار تواريخ النساء</span>
+        </label>
+        <button id="add-person-btn">+ إضافة شخص</button>
+        <button id="cleanup-btn" class="ghost" title="تنظيف التكرارات (للمشرف فقط)" hidden>🧹</button>
+        <button id="pdf-btn" class="ghost" title="تصدير ملخص PDF">📄</button>
+        <button id="merge-seed-btn" class="ghost" title="دمج التحديثات من seed.json (لا يحذف بياناتك)">🔄</button>
+        <button id="export-btn" class="ghost" title="تصدير نسخة مشفّرة">⇩</button>
+        <button id="import-btn" class="ghost" title="استيراد نسخة مشفّرة">⇧</button>
+        <button id="lock-btn" class="ghost" title="قفل">🔒</button>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div id="search-bar" class="search-bar">
+        <input id="search-input" type="text" placeholder="ابحث بالاسم..." />
+        <ul id="search-results" class="search-results"></ul>
+      </div>
+      <div id="view-outline" class="view"></div>
+      <div id="view-tree" class="view" hidden></div>
+      <div id="view-linked" class="view" hidden></div>
+      <div id="view-milk" class="view" hidden></div>
+      <div id="view-chronology" class="view" hidden></div>
+      <div id="view-profile" class="view" hidden></div>
+    </main>
+  </div>
+
+  <input id="import-file" type="file" accept="application/json,.json" hidden />
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

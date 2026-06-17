@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+qassabi-notes-temp.pdf
+Family-Tree-V2.pdf
+Family Tree V2.pdf
+Family Tree V3.pdf
+*.tmp
