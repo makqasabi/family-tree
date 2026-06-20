@@ -420,6 +420,47 @@ label {
   text-align: center;
 }
 
+/* Unified gate helpers */
+.gate-tagline {
+  text-align: center;
+  margin: 4px 0 var(--s-4);
+  font-size: 0.95em;
+}
+.gate-help {
+  margin-top: var(--s-5);
+  padding-top: var(--s-4);
+  border-top: 1px dashed var(--rule);
+  text-align: center;
+}
+.gate-wa-link {
+  display: inline-block;
+  color: var(--gold-deep);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid var(--gold-soft);
+  border-radius: var(--r-md);
+  background: rgba(176, 137, 71, 0.06);
+  transition: background 0.15s, color 0.15s;
+}
+.gate-wa-link:hover {
+  background: var(--gold);
+  color: #fff;
+}
+.gate-reset {
+  display: block;
+  margin: var(--s-4) auto 0;
+  font-size: 0.85em;
+  color: var(--ink-soft);
+  opacity: 0.7;
+}
+.gate-reset:hover { opacity: 1; }
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
 /* Outline view */
 .outline {
   background: linear-gradient(180deg, var(--bg-elev-2) 0%, var(--bg-elev-1) 100%);
