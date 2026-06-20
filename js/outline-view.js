@@ -196,26 +196,38 @@ function renderNode(id, visited) {
   const placeholderClass = p.isPlaceholder ? "placeholder" : "";
   const span = lifespan(p);
 
+  const kidCount = kids.length;
   let html = `<li>`;
-  html += `<span class="toggle" data-toggle="${id}">${hasKids ? (collapsed ? "▸" : "▾") : "·"}</span>`;
+
+  // --- Person row: [toggle] [name (dates)] ---
+  html += `<div class="ol-row">`;
+  html += `<button class="toggle ${hasKids ? "has-kids" : "leaf"}" data-toggle="${id}" aria-label="${hasKids ? (collapsed ? "توسيع" : "طيّ") : ""}">${hasKids ? (collapsed ? "▸" : "▾") : "•"}</button>`;
   html += `<span class="node ${genderClass} ${placeholderClass}" data-id="${id}">`;
   html += `<span class="name">${escapeHTML(p.fullName || p.given || id)}</span>`;
-  if (span) html += ` <span class="meta">(${escapeHTML(span)})</span>`;
-  if (p.tribe) html += ` <span class="meta">— ${escapeHTML(p.tribe)}</span>`;
+  if (span) html += `<span class="meta dates">(${escapeHTML(span)})</span>`;
+  if (p.tribe) html += `<span class="meta tribe">${escapeHTML(p.tribe)}</span>`;
+  // When collapsed, show how many descendants-children are hidden.
+  if (hasKids && collapsed) html += `<span class="kid-badge">${toArabicDigits(kidCount)}</span>`;
   html += `</span>`;
+  html += `</div>`;
 
+  // --- Spouse sub-rows (one per line, under the person) ---
   for (const { spouseId, marriage } of spouses) {
     const sp = getPerson(spouseId);
     if (!sp) continue;
-    const yr = marriage.year ? ` (${marriage.year}م)` : "";
-    const sym = marriage.dissolved
-      ? `<span class="union-symbol dissolved" title="مفسوخ">⚮</span>`
-      : `<span class="union-symbol active" title="قائم">⚭</span>`;
-    html += ` ${sym}<a class="marriage-link${marriage.dissolved ? " dissolved" : ""}" data-id="${spouseId}">${escapeHTML(sp.fullName)}${escapeHTML(yr)}</a>`;
+    const yr = marriage.year ? ` <span class="m-year">${marriage.year}م</span>` : "";
+    const sym = marriage.dissolved ? "⚮" : "⚭";
+    const symCls = marriage.dissolved ? "union-symbol dissolved" : "union-symbol active";
+    html += `<div class="ol-subrow spouse-row">`;
+    html += `<span class="${symCls}">${sym}</span>`;
+    html += `<a class="marriage-link${marriage.dissolved ? " dissolved" : ""}" data-id="${spouseId}">${escapeHTML(sp.fullName)}</a>${yr}`;
+    html += `</div>`;
   }
+
+  // --- Milk sub-rows ---
   for (const r of milk) {
     const others = (r.milkSiblingNames || []).join("، ");
-    if (others) html += ` <span class="milk-link">${escapeHTML(others)}</span>`;
+    if (others) html += `<div class="ol-subrow milk-row"><span class="milk-link">${escapeHTML(others)}</span></div>`;
   }
 
   if (hasKids && !collapsed) {

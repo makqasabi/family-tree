@@ -544,62 +544,132 @@ label {
   border-radius: 2px;
   opacity: 0.7;
 }
+/* Nested lists: each level steps inward (RTL → content shifts left) with a
+   vertical guide line on the right that children's elbow connectors join. */
 .outline ul {
   list-style: none;
-  padding-right: 24px;
-  margin: var(--s-1) 0;
-  border-right: 1px dotted var(--gold-soft);
-}
-.outline > ul { padding-right: 0; border-right: none; }
-.outline li {
-  padding: 3px 0;
+  padding-right: 18px;
+  margin: 0;
   position: relative;
 }
+.outline ul::before {
+  /* Vertical guide line for this level */
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 12px;
+  right: 7px;
+  width: 2px;
+  background: var(--gold-soft);
+  opacity: 0.5;
+  border-radius: 2px;
+}
+.outline > ul { padding-right: 0; }
+.outline > ul::before { display: none; }
+
+.outline li {
+  position: relative;
+  padding: 2px 0;
+}
+/* Elbow connector: horizontal tick from the vertical guide to each row */
+.outline ul > li::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -11px;
+  width: 11px;
+  height: 2px;
+  background: var(--gold-soft);
+  opacity: 0.5;
+  border-radius: 2px;
+}
+
+/* Person row */
+.ol-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
 .outline .node {
-  display: inline-flex; align-items: center; gap: var(--s-1);
-  padding: 3px 10px; border-radius: var(--r-md);
+  display: inline-flex; align-items: baseline; gap: 6px;
+  flex-wrap: wrap;
+  padding: 5px 10px; border-radius: var(--r-md);
   cursor: pointer;
   transition: background var(--tx-fast), color var(--tx-fast);
+  min-height: 30px;
 }
-.outline .node:hover {
-  background: var(--gold-glow);
-}
+.outline .node:hover { background: var(--gold-glow); }
 .outline .node .name {
   font-weight: 600;
   font-family: var(--font-heading);
   letter-spacing: 0.005em;
+  line-height: 1.35;
 }
 .outline .node .meta {
   color: var(--ink-faint);
-  font-size: 0.82em;
+  font-size: 0.78em;
   font-style: italic;
 }
+.outline .node .meta.tribe::before { content: "— "; }
 .outline .node.male .name { color: var(--male); }
 .outline .node.female .name { color: var(--female); }
 .outline .node.placeholder .name { color: var(--placeholder); font-style: italic; font-weight: 400; }
+
+/* Count badge shown on a collapsed parent */
+.kid-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px; height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 0.72em;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Toggle — a real tap target */
 .outline .toggle {
-  display: inline-block;
-  width: 18px; height: 18px;
-  text-align: center;
-  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px; height: 26px;
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
   cursor: pointer;
   user-select: none;
   color: var(--gold);
-  font-size: 0.9em;
-  transition: transform var(--tx-fast), color var(--tx-fast);
-}
-.outline .toggle:hover { color: var(--gold-deep); }
-.outline .marriage-link {
-  color: var(--ink-soft);
   font-size: 0.85em;
-  padding-right: var(--s-1);
-  font-style: italic;
+  font-family: inherit;
+  border-radius: 50%;
+  transition: background var(--tx-fast), color var(--tx-fast);
 }
-.outline .marriage-link.dissolved {
+.outline .toggle.has-kids:hover { background: var(--gold-glow); color: var(--gold-deep); }
+.outline .toggle.leaf { color: var(--gold-soft); opacity: 0.55; cursor: default; font-size: 0.7em; }
+
+/* Spouse / milk sub-rows — indented under the person, on their own line */
+.ol-subrow {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 1px 0;
+  margin-right: 34px;      /* align under the name, past the toggle */
+  font-size: 0.86em;
+  line-height: 1.4;
+}
+.ol-subrow .marriage-link {
+  color: var(--ink-soft);
+  font-style: normal;
+}
+.ol-subrow .marriage-link.dissolved {
   /* No strikethrough — out of respect. The ⚮ symbol carries the meaning. */
   color: var(--ink-soft);
-  opacity: 0.92;
+  opacity: 0.9;
 }
+.ol-subrow .m-year { color: var(--gold-deep); font-size: 0.9em; }
 
 /* Union (marriage/divorce) symbols — used wherever spouses are listed.
    ⚭ = active union, ⚮ = dissolved (no words used per heritage UI). */
@@ -2020,9 +2090,20 @@ label {
   /* Outline depth chips wrap cleanly on small screens */
   .outline-depth-bar { padding: 6px 8px; }
   .depth-chip { padding: 6px 12px; font-size: 0.86em; min-height: 36px; }
-  /* Outline tree itself: tap-friendly */
-  .outline .toggle { min-width: 24px; min-height: 28px; font-size: 1em; }
-  .outline .node { padding: 4px 0; }
+
+  /* Outline tree — tighter on phones so deeper levels still fit */
+  .outline { padding: 14px 10px; }
+  .outline ul { padding-right: 14px; }
+  .outline ul::before { right: 6px; }
+  .outline ul > li::before { right: -8px; width: 8px; }
+  .outline .node { padding: 5px 8px; }
+  .outline .node .name { font-size: 0.95em; }
+  .outline .node .meta.dates { font-size: 0.72em; }
+  /* On narrow screens the tribe note adds clutter — hide it in the tree
+     (still visible on the person's profile page). */
+  .outline .node .meta.tribe { display: none; }
+  .outline .toggle { width: 30px; height: 30px; }
+  .ol-subrow { margin-right: 30px; font-size: 0.82em; }
   /* Profile (when shown) — tighter heading spacing */
   .profile h2 { font-size: 1.25em; line-height: 1.4; }
   /* Search bar */
